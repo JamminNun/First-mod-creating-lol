@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "koldunas",
+    "customModelName": "Normal",
+    "name": "Koldunas",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "lol kek"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 16,
+    "nutritionalValue": 2,
+    "saturation": 0.4,
+    "eatingSpeed": 20,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "KoldunasFoodEaten"
+    }
+  }
+}
