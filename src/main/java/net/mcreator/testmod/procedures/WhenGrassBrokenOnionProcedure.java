@@ -40,7 +40,7 @@ public class WhenGrassBrokenOnionProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		double randomDrop = 0;
 		randomDrop = (double) Math.random();
-		if (((randomDrop >= 0.5) && (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS)
+		if (((randomDrop >= 0.7) && (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS)
 				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.FERN)))) {
 			if (world instanceof World && !world.isRemote()) {
 				ItemEntity entityToSpawn = new ItemEntity((World) world, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(OnionSeedItem.block));
