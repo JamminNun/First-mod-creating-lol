@@ -9,7 +9,7 @@
     "rarity": "COMMON",
     "specialInfo": [],
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:MoreMinecraftCreativeTab"
     },
     "stackSize": 64,
     "nutritionalValue": 10,

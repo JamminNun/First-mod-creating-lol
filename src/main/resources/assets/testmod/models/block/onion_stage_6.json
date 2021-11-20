@@ -1,8 +1,0 @@
-{
-  "parent": "testmod:custom/onion_stage_6",
-  "textures": {
-    "all": "testmod:blocks/onion_stage_6",
-    "particle": "testmod:blocks/onion_stage_6",
-    "crop": "testmod:blocks/onion_stage_6"
-  }
-}

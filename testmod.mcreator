@@ -236,86 +236,6 @@
       "path": "~/Uranium"
     },
     {
-      "name": "OnionStage0",
-      "type": "block",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_0",
-      "path": "~/Maistas/Onion"
-    },
-    {
-      "name": "OnionStage1",
-      "type": "block",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_1",
-      "path": "~/Maistas/Onion"
-    },
-    {
-      "name": "OnionStage2",
-      "type": "block",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_2",
-      "path": "~/Maistas/Onion"
-    },
-    {
-      "name": "OnionStage3",
-      "type": "block",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_3",
-      "path": "~/Maistas/Onion"
-    },
-    {
-      "name": "OnionStage4",
-      "type": "block",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_4",
-      "path": "~/Maistas/Onion"
-    },
-    {
-      "name": "OnionStage5",
-      "type": "block",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_5",
-      "path": "~/Maistas/Onion"
-    },
-    {
-      "name": "OnionStage6",
-      "type": "block",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_6",
-      "path": "~/Maistas/Onion"
-    },
-    {
-      "name": "OnionStage7",
-      "type": "block",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_7",
-      "path": "~/Maistas/Onion"
-    },
-    {
       "name": "OnionSeed",
       "type": "item",
       "sortid": 28,
@@ -326,9 +246,18 @@
       "path": "~/Maistas/Onion"
     },
     {
+      "name": "MoreMinecraftCreativeTab",
+      "type": "tab",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "more_minecraft_creative_tab"
+    },
+    {
       "name": "OnionSeedRightClickedOnBlock",
       "type": "procedure",
-      "sortid": 29,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -360,13 +289,23 @@
       "path": "~/Maistas/Onion"
     },
     {
-      "name": "WhenGrassBrokenOnion",
-      "type": "procedure",
-      "sortid": 30,
+      "name": "Onion",
+      "type": "food",
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "when_grass_broken_onion",
+      "registry_name": "onion",
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage1Procedure",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_1_procedure",
       "metadata": {
         "dependencies": [
           {
@@ -388,28 +327,156 @@
         ]
       },
       "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage0Procedure",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_0_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage2Procedure",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_2_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage3Procedure",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_3_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage0",
+      "type": "plant",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_0",
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage1",
+      "type": "plant",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_1",
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage2",
+      "type": "plant",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_2",
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage3",
+      "type": "plant",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_3",
+      "path": "~/Maistas/Onion"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.testmod.onion_stage_2": "Onion Stage 2",
       "item.testmod.uranium_ingot": "Uranium Ingot",
+      "block.testmod.onion_stage_2": "Onion Stage 2",
       "block.testmod.onion_stage_3": "Onion Stage 3",
-      "block.testmod.onion_stage_4": "Onion Stage 4",
-      "block.testmod.onion_stage_5": "Onion Stage 5",
       "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
       "item.testmod.kebabas": "Kebabas",
       "block.testmod.onion_stage_0": "Onion Stage 0",
       "block.testmod.onion_stage_1": "Onion Stage 1",
       "item.testmod.white_dough": "White Dough",
+      "item.testmod.onion": "Onion",
+      "itemGroup.tabmore_minecraft_creative_tab": "More Minecraft ",
       "item.testmod.onion_seed": "Onion Seed",
       "item.testmod.cinamon_bun": "Cinamon Bun",
-      "item.testmod.koldunas": "Koldunas",
-      "block.testmod.uranium_ore": "Uranium Ore",
-      "block.testmod.onion_stage_6": "Onion Stage 6",
-      "block.testmod.onion_stage_7": "Onion Stage 7"
+      "item.testmod.koldunas": "Ravioli",
+      "block.testmod.uranium_ore": "Uranium Ore"
     }
   },
   "foldersRoot": {

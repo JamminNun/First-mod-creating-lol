@@ -3,15 +3,15 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "koldunas",
+    "texture": "koldunai2",
     "customModelName": "Normal",
-    "name": "Koldunas",
+    "name": "Ravioli",
     "rarity": "COMMON",
     "specialInfo": [
       "lol kek"
     ],
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:MoreMinecraftCreativeTab"
     },
     "stackSize": 16,
     "nutritionalValue": 2,
