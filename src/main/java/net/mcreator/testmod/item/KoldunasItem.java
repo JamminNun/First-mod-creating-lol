@@ -9,13 +9,13 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.testmod.procedures.KoldunasFoodEatenProcedure;
+import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
 import net.mcreator.testmod.TestmodModElements;
 
 import java.util.Map;
@@ -36,7 +36,7 @@ public class KoldunasItem extends TestmodModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(16).rarity(Rarity.COMMON)
+			super(new Item.Properties().group(MoreMinecraftCreativeTabItemGroup.tab).maxStackSize(16).rarity(Rarity.COMMON)
 					.food((new Food.Builder()).hunger(2).saturation(0.4f).setAlwaysEdible().build()));
 			setRegistryName("koldunas");
 		}

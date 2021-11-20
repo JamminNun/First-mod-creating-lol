@@ -8,7 +8,7 @@
     "name": "White Dough",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:MoreMinecraftCreativeTab"
     },
     "stackSize": 64,
     "enchantability": 0,

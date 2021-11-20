@@ -1,83 +1,47 @@
 {
   "_fv": 24,
-  "_type": "block",
+  "_type": "plant",
   "definition": {
-    "texture": "onion_stage_0",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
     "renderType": 2,
+    "texture": "onion_stage_0",
+    "textureBottom": "",
     "customModelName": "onion_stage_0:default",
-    "rotationMode": 0,
-    "emissiveRendering": false,
-    "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
-    "connectedSides": false,
-    "transparencyType": "SOLID",
+    "plantType": "normal",
+    "staticPlantGenerationType": "Flower",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 5,
+    "growapableSpawnType": "Crop",
+    "growapableMaxHeight": 3,
+    "doublePlantGenerationType": "Flower",
+    "customBoundingBox": true,
     "disableOffset": false,
     "boundingBoxes": [
       {
         "mx": 0.0,
-        "my": 0.0,
+        "my": 0.001,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 16.0,
+        "My": 3.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
     "name": "Onion Stage 0",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 10.0,
-    "hasGravity": false,
-    "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "DECORATIONS"
     },
-    "destroyTool": "Not specified",
-    "customDrop": {
-      "value": ""
-    },
-    "dropAmount": 1,
-    "useLootTableForDrops": false,
-    "enchantPowerBonus": 0.0,
-    "plantsGrowOn": false,
-    "canRedstoneConnect": false,
-    "lightOpacity": 0,
-    "material": {
-      "value": "ROCK"
-    },
-    "tickRate": 10,
-    "tickRandomly": false,
-    "isReplaceable": false,
-    "canProvidePower": false,
-    "emittedRedstonePower": {
-      "fixedValue": 15.0
-    },
-    "colorOnMap": "DEFAULT",
-    "creativePickItem": {
-      "value": ""
-    },
-    "offsetType": "NONE",
-    "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
-    "fireSpreadSpeed": 0,
-    "isLadder": false,
-    "slipperiness": 0.6,
-    "speedFactor": 1.0,
-    "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0,
+    "unbreakable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "PLANT"
     },
     "breakSound": {
       "value": ""
@@ -94,43 +58,32 @@
     "fallSound": {
       "value": ""
     },
-    "luminance": 0,
-    "unbreakable": false,
-    "breakHarvestLevel": 1,
-    "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": "CUSTOM:OnionSeed"
     },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
-    "hasEnergyStorage": false,
-    "energyInitial": 0,
-    "energyCapacity": 400000,
-    "energyMaxReceive": 200,
-    "energyMaxExtract": 200,
-    "isFluidTank": false,
-    "fluidCapacity": 8000,
-    "fluidRestrictions": [],
+    "dropAmount": 1,
+    "forceTicking": true,
+    "emissiveRendering": false,
+    "hasTileEntity": true,
+    "isReplaceable": true,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": "CUSTOM:OnionSeed"
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 20,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "patchSize": 64,
+    "onTickUpdate": {
+      "name": "OnionStage0Procedure"
+    }
   }
 }

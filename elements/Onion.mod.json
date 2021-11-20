@@ -3,25 +3,23 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "cinamon_bun",
+    "texture": "onion",
     "customModelName": "Normal",
-    "name": "Cinamon Bun",
+    "name": "Onion",
     "rarity": "COMMON",
-    "specialInfo": [
-      "Very tasty nad still warm"
-    ],
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:MoreMinecraftCreativeTab"
     },
     "stackSize": 64,
-    "nutritionalValue": 4,
-    "saturation": 3.9999999999999996,
-    "eatingSpeed": 28,
+    "nutritionalValue": 2,
+    "saturation": 0.6,
+    "eatingSpeed": 32,
     "resultItem": {
       "value": ""
     },
     "forDogs": false,
-    "isAlwaysEdible": true,
+    "isAlwaysEdible": false,
     "animation": "eat",
     "hasGlow": false
   }
