@@ -3,7 +3,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "testmod:uranium_block"
+      "item": "testmod:deleted_mod_element"
     }
   ],
   "result": {

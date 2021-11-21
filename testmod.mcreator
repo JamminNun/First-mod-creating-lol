@@ -787,46 +787,6 @@
       "path": "~/Maistas/Meatballs"
     },
     {
-      "name": "SilverOakLog",
-      "type": "block",
-      "sortid": 63,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "silver_oak_log",
-      "path": "~/Biomes/magic forest"
-    },
-    {
-      "name": "UraniumBlock",
-      "type": "block",
-      "sortid": 64,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "uranium_block",
-      "path": "~/Uranium"
-    },
-    {
-      "name": "UraniumBlockFuel",
-      "type": "fuel",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "uranium_block_fuel",
-      "path": "~/Uranium"
-    },
-    {
-      "name": "UraniumBlockRecipe1",
-      "type": "recipe",
-      "sortid": 66,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "uranium_block_recipe_1",
-      "path": "~/Uranium"
-    },
-    {
       "name": "UraniumIngotRecipe1",
       "type": "recipe",
       "sortid": 67,
@@ -847,14 +807,14 @@
       "path": "~/Biomes/magic forest"
     },
     {
-      "name": "SilverOakPlanks",
-      "type": "block",
-      "sortid": 68,
+      "name": "UraniumBlockFuel",
+      "type": "fuel",
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "silver_oak_planks",
-      "path": "~/Biomes/magic forest"
+      "registry_name": "uranium_block_fuel",
+      "path": "~/Uranium"
     },
     {
       "name": "SilverOakLeaves",
@@ -895,6 +855,74 @@
         ]
       },
       "path": "~/Biomes/magic forest"
+    },
+    {
+      "name": "UraniumBlockRecipe1",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "uranium_block_recipe_1",
+      "path": "~/Uranium"
+    },
+    {
+      "name": "SilverOakLog",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silver_oak_log",
+      "path": "~/Biomes/magic forest"
+    },
+    {
+      "name": "SilverOakPlanks",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silver_oak_planks",
+      "path": "~/Biomes/magic forest"
+    },
+    {
+      "name": "UraniumBlock",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "uranium_block",
+      "path": "~/Uranium"
+    },
+    {
+      "name": "ShreksLogs",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shreks_logs",
+      "path": "~/Misc dalykai/Shrekslogs"
+    },
+    {
+      "name": "ShreksLogsRightClickedInAir",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shreks_logs_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Misc dalykai/Shrekslogs"
     }
   ],
   "variable_elements": [],
@@ -934,8 +962,30 @@
     "name": "~",
     "children": [
       {
+        "name": "Biomes",
+        "children": [
+          {
+            "name": "magic forest",
+            "children": []
+          }
+        ]
+      },
+      {
         "name": "Farming Items",
         "children": []
+      },
+      {
+        "name": "Misc dalykai",
+        "children": [
+          {
+            "name": "Shrekslogs",
+            "children": []
+          },
+          {
+            "name": "backpacks",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Uranium",
@@ -944,6 +994,10 @@
       {
         "name": "Maistas",
         "children": [
+          {
+            "name": "Meatballs",
+            "children": []
+          },
           {
             "name": "WhiteDough",
             "children": []
@@ -962,28 +1016,6 @@
           },
           {
             "name": "Kebabas",
-            "children": []
-          },
-          {
-            "name": "Meatballs",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Misc dalykai",
-        "children": [
-          {
-            "name": "backpacks",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Biomes",
-        "children": [
-          {
-            "name": "magic forest",
             "children": []
           }
         ]
