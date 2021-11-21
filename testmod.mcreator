@@ -635,17 +635,110 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Farming Items"
+    },
+    {
+      "name": "SmallBackpack",
+      "type": "item",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_backpack",
+      "path": "~/Misc dalykai/backpacks"
+    },
+    {
+      "name": "MediumBackpack",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "medium_backpack",
+      "path": "~/Misc dalykai/backpacks"
+    },
+    {
+      "name": "LargeBackpack",
+      "type": "item",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_backpack",
+      "path": "~/Misc dalykai/backpacks"
+    },
+    {
+      "name": "SmallBackpackGUI",
+      "type": "gui",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_backpack_gui",
+      "path": "~/Misc dalykai/backpacks"
+    },
+    {
+      "name": "MediumBackpackGUI",
+      "type": "gui",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "medium_backpack_gui",
+      "path": "~/Misc dalykai/backpacks"
+    },
+    {
+      "name": "LargeBackpackGUI",
+      "type": "gui",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_backpack_gui",
+      "path": "~/Misc dalykai/backpacks"
+    },
+    {
+      "name": "SmallBackpackRecipe1",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_backpack_recipe_1",
+      "path": "~/Misc dalykai/backpacks"
+    },
+    {
+      "name": "MediumBackpackRecipe1",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "medium_backpack_recipe_1",
+      "path": "~/Misc dalykai/backpacks"
+    },
+    {
+      "name": "LargeBackpackRecipe1",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_backpack_recipe_1",
+      "path": "~/Misc dalykai/backpacks"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.testmod.onion_stage_2": "Onion Stage 2",
       "item.testmod.uranium_ingot": "Uranium Ingot",
+      "block.testmod.onion_stage_2": "Onion Stage 2",
       "block.testmod.onion_stage_3": "Onion Stage 3",
+      "block.testmod.onion_stage_4": "Onion Stage 4",
       "block.testmod.onion_stage_5": "Onion Stage 5",
+      "item.testmod.medium_backpack": "Medium Backpack",
       "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
       "item.testmod.kebabas": "Kebabas",
       "block.testmod.onion_stage_0": "Onion Stage 0",
@@ -654,10 +747,12 @@
       "item.testmod.onion": "Onion",
       "itemGroup.tabmore_minecraft_creative_tab": "More Minecraft ",
       "item.testmod.onion_seed": "Onion Seed",
+      "item.testmod.large_backpack": "Large Backpack",
       "item.testmod.cinamon_bun": "Cinamon Bun",
       "item.testmod.koldunas": "Ravioli",
       "item.testmod.iron_sickle": "Iron Sickle",
-      "block.testmod.uranium_ore": "Uranium Ore"
+      "block.testmod.uranium_ore": "Uranium Ore",
+      "item.testmod.small_backpack": "Small Backpack"
     }
   },
   "foldersRoot": {
@@ -692,6 +787,15 @@
           },
           {
             "name": "Kebabas",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Misc dalykai",
+        "children": [
+          {
+            "name": "backpacks",
             "children": []
           }
         ]
