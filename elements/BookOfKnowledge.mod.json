@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.KNOWLEDGE_BOOK"
+      "value": "CUSTOM:ShreksLogs"
     },
     "name": "book_of_knowledge",
     "namespace": "mod"
