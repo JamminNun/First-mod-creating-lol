@@ -2,7 +2,6 @@
   "item.testmod.uranium_ingot": "Uranium Ingot",
   "block.testmod.onion_stage_2": "Onion Stage 2",
   "block.testmod.onion_stage_3": "Onion Stage 3",
-  "block.testmod.onion_stage_4": "Onion Stage 4",
   "block.testmod.onion_stage_5": "Onion Stage 5",
   "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
   "item.testmod.kebabas": "Kebabas",
@@ -14,5 +13,6 @@
   "item.testmod.onion_seed": "Onion Seed",
   "item.testmod.cinamon_bun": "Cinamon Bun",
   "item.testmod.koldunas": "Ravioli",
+  "item.testmod.iron_sickle": "Iron Sickle",
   "block.testmod.uranium_ore": "Uranium Ore"
 }

@@ -1,24 +1,7 @@
 package net.mcreator.testmod.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BlockEvent;
-
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.item.ItemEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.block.Blocks;
-
-import net.mcreator.testmod.item.OnionSeedItem;
-import net.mcreator.testmod.TestmodMod;
-
-import java.util.Map;
-import java.util.HashMap;
-
 public class OnionSeedFromGrassProcedure {
+
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -40,6 +23,7 @@ public class OnionSeedFromGrassProcedure {
 			executeProcedure(dependencies);
 		}
 	}
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -61,10 +45,12 @@ public class OnionSeedFromGrassProcedure {
 				TestmodMod.LOGGER.warn("Failed to load dependency world for procedure OnionSeedFromGrass!");
 			return;
 		}
+
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		double randomDrop = 0;
 		randomDrop = (double) Math.random();
 		if (((randomDrop >= 0.98) && (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS)
@@ -76,4 +62,5 @@ public class OnionSeedFromGrassProcedure {
 			}
 		}
 	}
+
 }

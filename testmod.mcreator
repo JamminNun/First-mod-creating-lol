@@ -389,6 +389,36 @@
       "path": "~/Maistas/Onion"
     },
     {
+      "name": "OnionStage3Procedure",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_3_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
+    },
+    {
       "name": "OnionStage0",
       "type": "plant",
       "sortid": 39,
@@ -429,33 +459,13 @@
       "path": "~/Maistas/Onion"
     },
     {
-      "name": "OnionStage4",
-      "type": "plant",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_4",
-      "path": "~/Maistas/Onion"
-    },
-    {
-      "name": "OnionStage5",
-      "type": "plant",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_5",
-      "path": "~/Maistas/Onion"
-    },
-    {
-      "name": "OnionStage3Procedure",
+      "name": "OnionSeedFromGrass",
       "type": "procedure",
-      "sortid": 45,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "onion_stage_3_procedure",
+      "registry_name": "onion_seed_from_grass",
       "metadata": {
         "dependencies": [
           {
@@ -479,6 +489,16 @@
       "path": "~/Maistas/Onion"
     },
     {
+      "name": "OnionStage5",
+      "type": "plant",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_5",
+      "path": "~/Maistas/Onion"
+    },
+    {
       "name": "OnionStage4Procedure",
       "type": "procedure",
       "sortid": 46,
@@ -486,6 +506,46 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "onion_stage_4_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage4",
+      "type": "plant",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_4",
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "WhenOnionStage5RightClicked",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "when_onion_stage_5_right_clicked",
       "metadata": {
         "dependencies": [
           {
@@ -539,43 +599,23 @@
       "path": "~/Maistas/Onion"
     },
     {
-      "name": "OnionSeedFromGrass",
-      "type": "procedure",
-      "sortid": 48,
+      "name": "IronSickle",
+      "type": "tool",
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "onion_seed_from_grass",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Maistas/Onion"
+      "registry_name": "iron_sickle",
+      "path": "~/Farming Items"
     },
     {
-      "name": "WhenOnionStage5RightClicked",
+      "name": "IronSickleBlockDestroyedWithTool",
       "type": "procedure",
-      "sortid": 49,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "when_onion_stage_5_right_clicked",
+      "registry_name": "iron_sickle_block_destroyed_with_tool",
       "metadata": {
         "dependencies": [
           {
@@ -595,18 +635,16 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/Maistas/Onion"
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.testmod.uranium_ingot": "Uranium Ingot",
       "block.testmod.onion_stage_2": "Onion Stage 2",
+      "item.testmod.uranium_ingot": "Uranium Ingot",
       "block.testmod.onion_stage_3": "Onion Stage 3",
-      "block.testmod.onion_stage_4": "Onion Stage 4",
       "block.testmod.onion_stage_5": "Onion Stage 5",
       "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
       "item.testmod.kebabas": "Kebabas",
@@ -618,6 +656,7 @@
       "item.testmod.onion_seed": "Onion Seed",
       "item.testmod.cinamon_bun": "Cinamon Bun",
       "item.testmod.koldunas": "Ravioli",
+      "item.testmod.iron_sickle": "Iron Sickle",
       "block.testmod.uranium_ore": "Uranium Ore"
     }
   },
@@ -625,14 +664,22 @@
     "name": "~",
     "children": [
       {
+        "name": "Farming Items",
+        "children": []
+      },
+      {
+        "name": "Uranium",
+        "children": []
+      },
+      {
         "name": "Maistas",
         "children": [
           {
-            "name": "Koldunas",
+            "name": "WhiteDough",
             "children": []
           },
           {
-            "name": "Kebabas",
+            "name": "Koldunas",
             "children": []
           },
           {
@@ -640,18 +687,14 @@
             "children": []
           },
           {
-            "name": "WhiteDough",
+            "name": "Onion",
             "children": []
           },
           {
-            "name": "Onion",
+            "name": "Kebabas",
             "children": []
           }
         ]
-      },
-      {
-        "name": "Uranium",
-        "children": []
       }
     ]
   },

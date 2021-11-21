@@ -1,19 +1,7 @@
 package net.mcreator.testmod.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.block.Blocks;
-
-import net.mcreator.testmod.block.OnionStage5Block;
-import net.mcreator.testmod.TestmodMod;
-
-import java.util.Map;
-
 public class OnionStage4ProcedureProcedure {
+
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
@@ -35,14 +23,18 @@ public class OnionStage4ProcedureProcedure {
 				TestmodMod.LOGGER.warn("Failed to load dependency world for procedure OnionStage4Procedure!");
 			return;
 		}
+
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		new Object() {
+
 			private int ticks = 0;
 			private float waitTicks;
 			private IWorld world;
+
 			public void start(IWorld world, int waitTicks) {
 				this.waitTicks = waitTicks;
 				MinecraftForge.EVENT_BUS.register(this);
@@ -63,6 +55,9 @@ public class OnionStage4ProcedureProcedure {
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), OnionStage5Block.block.getDefaultState(), 3);
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
+
 		}.start(world, (int) 600);
+
 	}
+
 }
