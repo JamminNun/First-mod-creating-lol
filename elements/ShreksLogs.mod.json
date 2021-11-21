@@ -8,7 +8,7 @@
     "name": "Book of Knowledge",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:MoreMinecraftCreativeTab"
     },
     "stackSize": 1,
     "enchantability": 0,

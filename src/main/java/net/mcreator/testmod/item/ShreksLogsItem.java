@@ -10,13 +10,13 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.ActionResult;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.testmod.procedures.ShreksLogsRightClickedInAirProcedure;
+import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
 import net.mcreator.testmod.TestmodModElements;
 
 import java.util.Map;
@@ -37,7 +37,7 @@ public class ShreksLogsItem extends TestmodModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(1).isImmuneToFire().rarity(Rarity.EPIC));
+			super(new Item.Properties().group(MoreMinecraftCreativeTabItemGroup.tab).maxStackSize(1).isImmuneToFire().rarity(Rarity.EPIC));
 			setRegistryName("shreks_logs");
 		}
 

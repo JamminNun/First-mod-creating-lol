@@ -1,27 +1,26 @@
 package net.mcreator.testmod.procedures;
 
-public class ShreksLogsRightClickedInAirProcedure {
+import net.minecraftforge.fml.server.ServerLifecycleHooks;
 
+import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ChatType;
+import net.minecraft.util.Util;
+import net.minecraft.server.MinecraftServer;
+
+import net.mcreator.testmod.TestmodMod;
+
+import java.util.Map;
+
+public class ShreksLogsRightClickedInAirProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
 				TestmodMod.LOGGER.warn("Failed to load dependency world for procedure ShreksLogsRightClickedInAir!");
 			return;
 		}
-
 		IWorld world = (IWorld) dependencies.get("world");
-
-		double Shrekone = 0;
-		double ShrekTwo = 0;
-		double ShrekThree = 0;
-		double ShrekFour = 0;
-		double ShrekFive = 0;
-		Shrekone = (double) 1;
-		ShrekTwo = (double) 0.5;
-		ShrekThree = (double) 0.6;
-		Shrekone = (double) 0.7;
-		Shrekone = (double) 0.8;
-		if ((Math.random() == Shrekone)) {
+		if (((Math.random() < 1) && (Math.random() > 0.9))) {
 			if (!world.isRemote()) {
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
@@ -29,7 +28,7 @@ public class ShreksLogsRightClickedInAirProcedure {
 							Util.DUMMY_UUID);
 			}
 		} else {
-			if ((Math.random() == ShrekTwo)) {
+			if (((Math.random() < 0.9) && (Math.random() > 0.8))) {
 				if (!world.isRemote()) {
 					MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 					if (mcserv != null)
@@ -39,7 +38,7 @@ public class ShreksLogsRightClickedInAirProcedure {
 								ChatType.SYSTEM, Util.DUMMY_UUID);
 				}
 			} else {
-				if ((Math.random() == ShrekThree)) {
+				if (((Math.random() < 0.8) && (Math.random() > 0.7))) {
 					if (!world.isRemote()) {
 						MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 						if (mcserv != null)
@@ -47,7 +46,7 @@ public class ShreksLogsRightClickedInAirProcedure {
 									ChatType.SYSTEM, Util.DUMMY_UUID);
 					}
 				} else {
-					if ((Math.random() == ShrekFour)) {
+					if (((Math.random() < 0.7) && (Math.random() > 0.6))) {
 						if (!world.isRemote()) {
 							MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 							if (mcserv != null)
@@ -56,7 +55,7 @@ public class ShreksLogsRightClickedInAirProcedure {
 										ChatType.SYSTEM, Util.DUMMY_UUID);
 						}
 					} else {
-						if ((Math.random() == ShrekFive)) {
+						if (((Math.random() < 0.6) && (Math.random() > 0.5))) {
 							if (!world.isRemote()) {
 								MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 								if (mcserv != null)
@@ -70,5 +69,4 @@ public class ShreksLogsRightClickedInAirProcedure {
 			}
 		}
 	}
-
 }
