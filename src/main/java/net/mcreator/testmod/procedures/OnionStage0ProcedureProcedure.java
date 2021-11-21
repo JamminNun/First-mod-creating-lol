@@ -4,6 +4,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.testmod.block.OnionStage2Block;
 import net.mcreator.testmod.block.OnionStage1Block;
 import net.mcreator.testmod.TestmodMod;
 
@@ -44,7 +45,7 @@ public class OnionStage0ProcedureProcedure {
 		if ((world.canBlockSeeSky(new BlockPos((int) x, (int) y, (int) z)))) {
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getLightValue()) > 5)) {
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), OnionStage1Block.block.getDefaultState(), 3);
+				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), OnionStage2Block.block.getDefaultState(), 3);
 			}
 		}
 	}
