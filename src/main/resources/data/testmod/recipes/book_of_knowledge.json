@@ -1,0 +1,22 @@
+{
+  "group": "testmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "testmod:onion"
+    },
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "result": {
+    "item": "minecraft:knowledge_book",
+    "count": 1
+  }
+}

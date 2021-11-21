@@ -923,6 +923,16 @@
         ]
       },
       "path": "~/Misc dalykai/Shrekslogs"
+    },
+    {
+      "name": "BookOfKnowledge",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "book_of_knowledge",
+      "path": "~/Misc dalykai/Shrekslogs"
     }
   ],
   "variable_elements": [],
