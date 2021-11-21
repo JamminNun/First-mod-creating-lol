@@ -785,6 +785,34 @@
       "ids": {},
       "registry_name": "meatballs_recipe_1",
       "path": "~/Maistas/Meatballs"
+    },
+    {
+      "name": "ShreksLogsRightClickedInAir",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shreks_logs_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Misc dalykai/Shrekslogs"
+    },
+    {
+      "name": "ShreksLogs",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shreks_logs",
+      "path": "~/Misc dalykai/Shrekslogs"
     }
   ],
   "variable_elements": [],
@@ -806,6 +834,7 @@
       "itemGroup.tabmore_minecraft_creative_tab": "More Minecraft ",
       "item.testmod.onion_seed": "Onion Seed",
       "item.testmod.large_backpack": "Large Backpack",
+      "item.testmod.shreks_logs": "Book of Knowledge",
       "item.testmod.cinamon_bun": "Cinamon Bun",
       "item.testmod.koldunas": "Ravioli",
       "item.testmod.iron_sickle": "Iron Sickle",
@@ -860,6 +889,10 @@
         "children": [
           {
             "name": "backpacks",
+            "children": []
+          },
+          {
+            "name": "Shrekslogs",
             "children": []
           }
         ]
