@@ -3,29 +3,29 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "kebabas",
+    "texture": "koldunu_bliudas",
     "customModelName": "Normal",
-    "name": "Burrito",
+    "name": "Bowl of Ravioli",
     "rarity": "COMMON",
     "specialInfo": [
-      "Gives Slow Falling I for 30 seconds"
+      "Gives Luck II for 60 seconds"
     ],
     "creativeTab": {
-      "value": "CUSTOM:MoreMinecraftCreativeTab"
+      "value": "FOOD"
     },
     "stackSize": 64,
     "nutritionalValue": 10,
-    "saturation": 10.0,
-    "eatingSpeed": 35,
+    "saturation": 6.0,
+    "eatingSpeed": 40,
     "resultItem": {
-      "value": ""
+      "value": "Items.BOWL"
     },
     "forDogs": false,
     "isAlwaysEdible": true,
     "animation": "eat",
     "hasGlow": false,
     "onEaten": {
-      "name": "KebabasFoodEaten"
+      "name": "KoldunuBliudasFoodEaten"
     }
   }
 }

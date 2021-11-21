@@ -5,30 +5,30 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:WhiteDough"
+        "value": "CUSTOM:Koldunas"
       },
       {
-        "value": "Items.BEEF"
+        "value": "CUSTOM:Koldunas"
       },
       {
-        "value": "CUSTOM:Onion"
+        "value": "CUSTOM:Koldunas"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Koldunas"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Koldunas"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Koldunas"
       },
       {
-        "value": ""
+        "value": "Items.BOWL"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Koldunas"
+      "value": "CUSTOM:KoldunuBliudas"
     },
-    "name": "koldunas_crafting_1",
+    "name": "koldunas_bliudas_recipe_1",
     "namespace": "mod"
   }
 }

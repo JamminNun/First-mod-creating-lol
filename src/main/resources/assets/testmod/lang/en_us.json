@@ -6,7 +6,7 @@
   "block.testmod.onion_stage_5": "Onion Stage 5",
   "item.testmod.medium_backpack": "Medium Backpack",
   "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
-  "item.testmod.kebabas": "Kebabas",
+  "item.testmod.kebabas": "Burrito",
   "block.testmod.onion_stage_0": "Onion Stage 0",
   "block.testmod.onion_stage_1": "Onion Stage 1",
   "item.testmod.white_dough": "White Dough",
@@ -18,5 +18,7 @@
   "item.testmod.koldunas": "Ravioli",
   "item.testmod.iron_sickle": "Iron Sickle",
   "block.testmod.uranium_ore": "Uranium Ore",
+  "item.testmod.koldunu_bliudas": "Bowl of Ravioli",
+  "item.testmod.meatballs": "Meatballs",
   "item.testmod.small_backpack": "Small Backpack"
 }

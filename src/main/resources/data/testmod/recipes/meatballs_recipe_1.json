@@ -3,17 +3,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "testmod:white_dough"
+      "item": "testmod:onion"
     },
     {
       "item": "minecraft:beef"
-    },
-    {
-      "item": "testmod:onion"
     }
   ],
   "result": {
-    "item": "testmod:koldunas",
-    "count": 4
+    "item": "testmod:meatballs",
+    "count": 1
   }
 }

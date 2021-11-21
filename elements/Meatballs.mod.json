@@ -1,0 +1,29 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "meatballs",
+    "customModelName": "Normal",
+    "name": "Meatballs",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Mmmmm",
+      "straight from sweeden :)"
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 6,
+    "saturation": 5.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

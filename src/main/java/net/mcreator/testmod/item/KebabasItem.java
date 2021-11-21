@@ -4,18 +4,22 @@ package net.mcreator.testmod.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.testmod.procedures.KebabasFoodEatenProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
 import net.mcreator.testmod.TestmodModElements;
 
 import java.util.Map;
+import java.util.List;
 import java.util.HashMap;
 
 @TestmodModElements.ModElement.Tag
@@ -45,6 +49,12 @@ public class KebabasItem extends TestmodModElements.ModElement {
 		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
 			return UseAction.EAT;
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("Gives Slow Falling I for 30 seconds"));
 		}
 
 		@Override

@@ -5,18 +5,18 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:WhiteDough"
+        "value": "CUSTOM:Onion"
       },
       {
         "value": "Items.BEEF"
       },
       {
-        "value": "CUSTOM:Onion"
+        "value": ""
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Koldunas"
+      "value": "CUSTOM:Meatballs"
     },
-    "name": "koldunas_crafting_1",
+    "name": "meatballs_recipe_1",
     "namespace": "mod"
   }
 }

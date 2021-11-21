@@ -727,6 +727,64 @@
       "ids": {},
       "registry_name": "large_backpack_recipe_1",
       "path": "~/Misc dalykai/backpacks"
+    },
+    {
+      "name": "KoldunuBliudasFoodEaten",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "koldunu_bliudas_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Maistas/Koldunas"
+    },
+    {
+      "name": "KoldunuBliudas",
+      "type": "food",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "koldunu_bliudas",
+      "path": "~/Maistas/Koldunas"
+    },
+    {
+      "name": "KoldunasBliudasRecipe1",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "koldunas_bliudas_recipe_1",
+      "path": "~/Maistas/Koldunas"
+    },
+    {
+      "name": "Meatballs",
+      "type": "food",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meatballs",
+      "path": "~/Maistas/Meatballs"
+    },
+    {
+      "name": "MeatballsRecipe1",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meatballs_recipe_1",
+      "path": "~/Maistas/Meatballs"
     }
   ],
   "variable_elements": [],
@@ -740,7 +798,7 @@
       "block.testmod.onion_stage_5": "Onion Stage 5",
       "item.testmod.medium_backpack": "Medium Backpack",
       "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
-      "item.testmod.kebabas": "Kebabas",
+      "item.testmod.kebabas": "Burrito",
       "block.testmod.onion_stage_0": "Onion Stage 0",
       "block.testmod.onion_stage_1": "Onion Stage 1",
       "item.testmod.white_dough": "White Dough",
@@ -752,6 +810,8 @@
       "item.testmod.koldunas": "Ravioli",
       "item.testmod.iron_sickle": "Iron Sickle",
       "block.testmod.uranium_ore": "Uranium Ore",
+      "item.testmod.koldunu_bliudas": "Bowl of Ravioli",
+      "item.testmod.meatballs": "Meatballs",
       "item.testmod.small_backpack": "Small Backpack"
     }
   },
@@ -787,6 +847,10 @@
           },
           {
             "name": "Kebabas",
+            "children": []
+          },
+          {
+            "name": "Meatballs",
             "children": []
           }
         ]

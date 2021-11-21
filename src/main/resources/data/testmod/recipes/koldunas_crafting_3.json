@@ -7,6 +7,9 @@
     },
     {
       "item": "minecraft:mutton"
+    },
+    {
+      "item": "testmod:onion"
     }
   ],
   "result": {

@@ -1,0 +1,31 @@
+{
+  "group": "testmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "testmod:koldunas"
+    },
+    {
+      "item": "testmod:koldunas"
+    },
+    {
+      "item": "testmod:koldunas"
+    },
+    {
+      "item": "testmod:koldunas"
+    },
+    {
+      "item": "testmod:koldunas"
+    },
+    {
+      "item": "testmod:koldunas"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "testmod:koldunu_bliudas",
+    "count": 1
+  }
+}
