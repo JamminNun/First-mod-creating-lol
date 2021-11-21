@@ -3,9 +3,9 @@
   "_type": "plant",
   "definition": {
     "renderType": 2,
-    "texture": "onion_stage_3",
+    "texture": "onion_stage_4",
     "textureBottom": "",
-    "customModelName": "onion_stage_3:default",
+    "customModelName": "onion_stage_4:default",
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
@@ -25,12 +25,12 @@
         "my": 0.001,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 9.0,
+        "My": 11.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Onion Stage 3",
+    "name": "Onion Stage 4",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:MoreMinecraftCreativeTab"
@@ -60,7 +60,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": "CUSTOM:Onion"
+      "value": "CUSTOM:OnionSeed"
     },
     "dropAmount": 1,
     "forceTicking": true,
@@ -83,7 +83,7 @@
     "restrictionBiomes": [],
     "patchSize": 64,
     "onTickUpdate": {
-      "name": "OnionStage3Procedure"
+      "name": "OnionStage4Procedure"
     }
   }
 }

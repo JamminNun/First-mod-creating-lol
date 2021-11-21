@@ -1,11 +1,14 @@
 package net.mcreator.testmod.procedures;
 
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.item.ItemEntity;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
 
-import net.mcreator.testmod.item.OnionItem;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.block.Blocks;
+
+import net.mcreator.testmod.block.OnionStage4Block;
 import net.mcreator.testmod.TestmodMod;
 
 import java.util.Map;
@@ -36,15 +39,30 @@ public class OnionStage3ProcedureProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(OnionItem.block));
-			entityToSpawn.setPickupDelay((int) 0);
-			world.addEntity(entityToSpawn);
-		}
-		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(OnionItem.block));
-			entityToSpawn.setPickupDelay((int) 0);
-			world.addEntity(entityToSpawn);
-		}
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
+
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
+
+			private void run() {
+				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
+				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), OnionStage4Block.block.getDefaultState(), 3);
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 600);
 	}
 }

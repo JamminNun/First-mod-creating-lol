@@ -10,7 +10,6 @@ import net.minecraftforge.common.PlantType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.vector.Vector3d;
@@ -18,8 +17,11 @@ import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.potion.Effects;
@@ -30,6 +32,7 @@ import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
@@ -39,26 +42,25 @@ import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.testmod.procedures.OnionStage3ProcedureProcedure;
+import net.mcreator.testmod.procedures.WhenOnionStage5RightClickedProcedure;
+import net.mcreator.testmod.procedures.OnionStage5ProcedureProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
 import net.mcreator.testmod.item.OnionSeedItem;
-import net.mcreator.testmod.item.OnionItem;
 import net.mcreator.testmod.TestmodModElements;
 
-import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
 
 @TestmodModElements.ModElement.Tag
-public class OnionStage3Block extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:onion_stage_3")
+public class OnionStage5Block extends TestmodModElements.ModElement {
+	@ObjectHolder("testmod:onion_stage_5")
 	public static final Block block = null;
-	@ObjectHolder("testmod:onion_stage_3")
+	@ObjectHolder("testmod:onion_stage_5")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public OnionStage3Block(TestmodModElements instance) {
-		super(instance, 42);
+	public OnionStage5Block(TestmodModElements instance) {
+		super(instance, 44);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -71,7 +73,7 @@ public class OnionStage3Block extends TestmodModElements.ModElement {
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("onion_stage_3"));
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("onion_stage_5"));
 		}
 	}
 	@Override
@@ -83,13 +85,13 @@ public class OnionStage3Block extends TestmodModElements.ModElement {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("onion_stage_3");
+			setRegistryName("onion_stage_5");
 		}
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0.001, 0, 16, 9, 16)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(0, 0.001, 0, 16, 13, 16)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -117,7 +119,7 @@ public class OnionStage3Block extends TestmodModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(OnionItem.block));
+			return Collections.singletonList(new ItemStack(OnionSeedItem.block));
 		}
 
 		@Override
@@ -126,7 +128,8 @@ public class OnionStage3Block extends TestmodModElements.ModElement {
 		}
 
 		@Override
-		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+		public boolean removedByPlayer(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, FluidState fluid) {
+			boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
@@ -136,8 +139,31 @@ public class OnionStage3Block extends TestmodModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				OnionStage3ProcedureProcedure.executeProcedure($_dependencies);
+				OnionStage5ProcedureProcedure.executeProcedure($_dependencies);
 			}
+			return retval;
+		}
+
+		@Override
+		public ActionResultType onBlockActivated(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, Hand hand,
+				BlockRayTraceResult hit) {
+			super.onBlockActivated(blockstate, world, pos, entity, hand, hit);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			double hitX = hit.getHitVec().x;
+			double hitY = hit.getHitVec().y;
+			double hitZ = hit.getHitVec().z;
+			Direction direction = hit.getFace();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				WhenOnionStage5RightClickedProcedure.executeProcedure($_dependencies);
+			}
+			return ActionResultType.SUCCESS;
 		}
 
 		@Override

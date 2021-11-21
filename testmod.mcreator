@@ -389,36 +389,6 @@
       "path": "~/Maistas/Onion"
     },
     {
-      "name": "OnionStage3Procedure",
-      "type": "procedure",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "onion_stage_3_procedure",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Maistas/Onion"
-    },
-    {
       "name": "OnionStage0",
       "type": "plant",
       "sortid": 39,
@@ -457,6 +427,176 @@
       "ids": {},
       "registry_name": "onion_stage_3",
       "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage4",
+      "type": "plant",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_4",
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage5",
+      "type": "plant",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_5",
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage3Procedure",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_3_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage4Procedure",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_4_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionStage5Procedure",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_stage_5_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "OnionSeedFromGrass",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_seed_from_grass",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "WhenOnionStage5RightClicked",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "when_onion_stage_5_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Maistas/Onion"
     }
   ],
   "variable_elements": [],
@@ -466,6 +606,8 @@
       "item.testmod.uranium_ingot": "Uranium Ingot",
       "block.testmod.onion_stage_2": "Onion Stage 2",
       "block.testmod.onion_stage_3": "Onion Stage 3",
+      "block.testmod.onion_stage_4": "Onion Stage 4",
+      "block.testmod.onion_stage_5": "Onion Stage 5",
       "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
       "item.testmod.kebabas": "Kebabas",
       "block.testmod.onion_stage_0": "Onion Stage 0",

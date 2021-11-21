@@ -33,9 +33,9 @@
     "name": "Onion Stage 0",
     "specialInfo": [],
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:MoreMinecraftCreativeTab"
     },
-    "hardness": 0.0,
+    "hardness": 0.1,
     "resistance": 0.0,
     "luminance": 0,
     "unbreakable": false,
@@ -66,7 +66,7 @@
     "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": true,
-    "isReplaceable": true,
+    "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": "CUSTOM:OnionSeed"

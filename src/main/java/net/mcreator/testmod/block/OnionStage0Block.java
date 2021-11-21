@@ -28,9 +28,7 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -42,6 +40,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.testmod.procedures.OnionStage0ProcedureProcedure;
+import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
 import net.mcreator.testmod.item.OnionSeedItem;
 import net.mcreator.testmod.TestmodModElements;
 
@@ -65,7 +64,8 @@ public class OnionStage0Block extends TestmodModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(MoreMinecraftCreativeTabItemGroup.tab))
+				.setRegistryName(block.getRegistryName()));
 	}
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
@@ -81,7 +81,7 @@ public class OnionStage0Block extends TestmodModElements.ModElement {
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.PLANT)
-					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
+					.hardnessAndResistance(0.1f, 0f).setLightLevel(s -> 0));
 			setRegistryName("onion_stage_0");
 		}
 
@@ -89,11 +89,6 @@ public class OnionStage0Block extends TestmodModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
 			return VoxelShapes.or(makeCuboidShape(0, 0.001, 0, 16, 3, 16)).withOffset(offset.x, offset.y, offset.z);
-		}
-
-		@Override
-		public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
-			return useContext.getItem().getItem() != this.asItem();
 		}
 
 		@Override

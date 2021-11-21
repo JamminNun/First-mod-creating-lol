@@ -25,7 +25,7 @@
         "my": 0.001,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 11.0,
+        "My": 7.0,
         "Mz": 16.0,
         "subtract": false
       }
@@ -66,7 +66,7 @@
     "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": true,
-    "isReplaceable": true,
+    "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": "CUSTOM:OnionSeed"
@@ -79,9 +79,7 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [],
     "frequencyOnChunks": 5,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "patchSize": 64,
     "onTickUpdate": {

@@ -8,7 +8,7 @@
     "name": "Onion Seed",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:MoreMinecraftCreativeTab"
     },
     "stackSize": 64,
     "enchantability": 0,

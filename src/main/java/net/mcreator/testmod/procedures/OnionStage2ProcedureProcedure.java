@@ -1,5 +1,9 @@
 package net.mcreator.testmod.procedures;
 
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
+
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.block.Blocks;
@@ -35,17 +39,30 @@ public class OnionStage2ProcedureProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((!(world.canBlockSeeSky(new BlockPos((int) x, (int) y, (int) z))))) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getLightValue()) > 8)) {
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
+
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
+
+			private void run() {
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), OnionStage3Block.block.getDefaultState(), 3);
+				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}
-		if ((world.canBlockSeeSky(new BlockPos((int) x, (int) y, (int) z)))) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getLightValue()) > 5)) {
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
-				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), OnionStage3Block.block.getDefaultState(), 3);
-			}
-		}
+		}.start(world, (int) 600);
 	}
 }

@@ -39,10 +39,9 @@ import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.testmod.procedures.OnionStage3ProcedureProcedure;
+import net.mcreator.testmod.procedures.OnionStage4ProcedureProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
 import net.mcreator.testmod.item.OnionSeedItem;
-import net.mcreator.testmod.item.OnionItem;
 import net.mcreator.testmod.TestmodModElements;
 
 import java.util.Random;
@@ -52,13 +51,13 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @TestmodModElements.ModElement.Tag
-public class OnionStage3Block extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:onion_stage_3")
+public class OnionStage4Block extends TestmodModElements.ModElement {
+	@ObjectHolder("testmod:onion_stage_4")
 	public static final Block block = null;
-	@ObjectHolder("testmod:onion_stage_3")
+	@ObjectHolder("testmod:onion_stage_4")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public OnionStage3Block(TestmodModElements instance) {
-		super(instance, 42);
+	public OnionStage4Block(TestmodModElements instance) {
+		super(instance, 43);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}
 
@@ -71,7 +70,7 @@ public class OnionStage3Block extends TestmodModElements.ModElement {
 	private static class TileEntityRegisterHandler {
 		@SubscribeEvent
 		public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("onion_stage_3"));
+			event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("onion_stage_4"));
 		}
 	}
 	@Override
@@ -83,13 +82,13 @@ public class OnionStage3Block extends TestmodModElements.ModElement {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("onion_stage_3");
+			setRegistryName("onion_stage_4");
 		}
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0.001, 0, 16, 9, 16)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(0, 0.001, 0, 16, 11, 16)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -117,7 +116,7 @@ public class OnionStage3Block extends TestmodModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(OnionItem.block));
+			return Collections.singletonList(new ItemStack(OnionSeedItem.block));
 		}
 
 		@Override
@@ -136,7 +135,7 @@ public class OnionStage3Block extends TestmodModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				OnionStage3ProcedureProcedure.executeProcedure($_dependencies);
+				OnionStage4ProcedureProcedure.executeProcedure($_dependencies);
 			}
 		}
 

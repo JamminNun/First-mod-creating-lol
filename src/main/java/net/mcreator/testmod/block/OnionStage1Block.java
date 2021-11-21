@@ -29,7 +29,6 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -89,12 +88,7 @@ public class OnionStage1Block extends TestmodModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0.001, 0, 16, 7, 16)).withOffset(offset.x, offset.y, offset.z);
-		}
-
-		@Override
-		public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
-			return useContext.getItem().getItem() != this.asItem();
+			return VoxelShapes.or(makeCuboidShape(0, 0.001, 0, 16, 5, 16)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
