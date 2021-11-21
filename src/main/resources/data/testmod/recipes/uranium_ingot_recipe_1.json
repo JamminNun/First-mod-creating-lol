@@ -1,0 +1,13 @@
+{
+  "group": "testmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "testmod:uranium_block"
+    }
+  ],
+  "result": {
+    "item": "testmod:uranium_ingot",
+    "count": 9
+  }
+}

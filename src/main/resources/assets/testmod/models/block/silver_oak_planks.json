@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "testmod:blocks/silver_oak_planks",
+    "up": "testmod:blocks/silver_oak_planks",
+    "north": "testmod:blocks/silver_oak_planks",
+    "east": "testmod:blocks/silver_oak_planks",
+    "south": "testmod:blocks/silver_oak_planks",
+    "west": "testmod:blocks/silver_oak_planks",
+    "particle": "testmod:blocks/silver_oak_planks"
+  }
+}

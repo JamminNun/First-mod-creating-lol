@@ -2,19 +2,19 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "uranium_ore",
-    "textureTop": "uranium_ore",
-    "textureLeft": "uranium_ore",
-    "textureFront": "uranium_ore",
-    "textureRight": "uranium_ore",
-    "textureBack": "uranium_ore",
+    "texture": "uranium_block",
+    "textureTop": "uranium_block",
+    "textureLeft": "uranium_block",
+    "textureFront": "uranium_block",
+    "textureRight": "uranium_block",
+    "textureBack": "uranium_block",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "uranium_ore",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,9 +32,9 @@
         "subtract": false
       }
     ],
-    "name": "Uranium Ore",
+    "name": "Uranium Block",
     "specialInfo": [],
-    "hardness": 3.0,
+    "hardness": 5.0,
     "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -49,7 +49,7 @@
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": true,
+    "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
       "value": "ROCK"
@@ -94,16 +94,16 @@
     "fallSound": {
       "value": ""
     },
-    "luminance": 5,
+    "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 2,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "TOTEM"
+      "value": "EXPLOSION_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
-    "particleAmount": 1,
+    "particleAmount": 4,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -121,18 +121,16 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 4,
-    "frequencyOnChunk": 5,
-    "minGenerateHeight": 12,
-    "maxGenerateHeight": 24
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }
