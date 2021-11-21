@@ -457,6 +457,45 @@
       "ids": {},
       "registry_name": "onion_stage_3",
       "path": "~/Maistas/Onion"
+    },
+    {
+      "name": "IronSickleBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_sickle_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IronSickle",
+      "type": "tool",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_sickle",
+      "path": "~/Farming Items"
     }
   ],
   "variable_elements": [],
@@ -476,6 +515,7 @@
       "item.testmod.onion_seed": "Onion Seed",
       "item.testmod.cinamon_bun": "Cinamon Bun",
       "item.testmod.koldunas": "Ravioli",
+      "item.testmod.iron_sickle": "Iron Sickle",
       "block.testmod.uranium_ore": "Uranium Ore"
     }
   },
@@ -509,6 +549,10 @@
       },
       {
         "name": "Uranium",
+        "children": []
+      },
+      {
+        "name": "Farming Items",
         "children": []
       }
     ]
