@@ -38,7 +38,7 @@ public class SilverOakLeavesBlockDestroyedByPlayerProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((Math.random() < 0.06)) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Blocks.REDSTONE_BLOCK));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Blocks.POLISHED_ANDESITE_STAIRS));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}
