@@ -1,0 +1,16 @@
+{
+  "group": "testmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "minecraft:fishes"
+    },
+    {
+      "item": "testmod:white_dough"
+    }
+  ],
+  "result": {
+    "item": "testmod:deleted_mod_element",
+    "count": 2
+  }
+}

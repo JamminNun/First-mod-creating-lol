@@ -804,7 +804,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "stripped_silver_oak_log",
-      "path": "~/Biomes/magic forest/medis lol"
+      "path": "~/Biomes/magic forest"
     },
     {
       "name": "UraniumBlockFuel",
@@ -824,7 +824,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "silver_oak_leaves",
-      "path": "~/Biomes/magic forest/medis lol"
+      "path": "~/Biomes/magic forest"
     },
     {
       "name": "SilverOakLeavesBlockDestroyedByPlayer",
@@ -854,7 +854,7 @@
           }
         ]
       },
-      "path": "~/Biomes/magic forest/medis lol"
+      "path": "~/Biomes/magic forest"
     },
     {
       "name": "UraniumBlockRecipe1",
@@ -874,7 +874,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "silver_oak_log",
-      "path": "~/Biomes/magic forest/medis lol"
+      "path": "~/Biomes/magic forest"
     },
     {
       "name": "SilverOakPlanks",
@@ -884,7 +884,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "silver_oak_planks",
-      "path": "~/Biomes/magic forest/medis lol"
+      "path": "~/Biomes/magic forest"
     },
     {
       "name": "UraniumBlock",
@@ -935,16 +935,6 @@
       "path": "~/Misc dalykai/Shrekslogs"
     },
     {
-      "name": "SilverOakSapling",
-      "type": "plant",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "silver_oak_sapling",
-      "path": "~/Biomes/magic forest/medis lol"
-    },
-    {
       "name": "SilverOakSaplingUpdateTick",
       "type": "procedure",
       "sortid": 73,
@@ -972,6 +962,36 @@
           }
         ]
       },
+      "path": "~/Biomes/magic forest/medis lol"
+    },
+    {
+      "name": "SilverOakSapling",
+      "type": "plant",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silver_oak_sapling",
+      "path": "~/Biomes/magic forest/medis lol"
+    },
+    {
+      "name": "SilverOakForest",
+      "type": "biome",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silver_oak_forest",
+      "path": "~/Biomes/magic forest"
+    },
+    {
+      "name": "SilverOakTree1",
+      "type": "structure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silver_oak_tree_1",
       "path": "~/Biomes/magic forest/medis lol"
     },
     {
@@ -1009,24 +1029,61 @@
       "path": "~/Biomes/magic forest/medis lol"
     },
     {
-      "name": "SilverOakTree1",
-      "type": "structure",
+      "name": "OnionRings",
+      "type": "food",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_rings",
+      "path": "~/Maistas/Onion rings"
+    },
+    {
+      "name": "BritishFishStick",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "british_fish_stick",
+      "path": "~/Maistas/BritishFishFingers"
+    },
+    {
+      "name": "BritishFishSticks",
+      "type": "food",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "british_fish_sticks",
+      "path": "~/Maistas/BritishFishFingers"
+    },
+    {
+      "name": "OnionRing",
+      "type": "recipe",
       "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "silver_oak_tree_1",
-      "path": "~/Biomes/magic forest/medis lol"
+      "registry_name": "onion_ring",
+      "path": "~/Maistas/Onion rings"
     },
     {
-      "name": "SilverOakForest",
-      "type": "biome",
-      "sortid": 76,
+      "name": "OnionRingsFoodEaten",
+      "type": "procedure",
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "silver_oak_forest",
-      "path": "~/Biomes/magic forest"
+      "registry_name": "onion_rings_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1051,10 +1108,10 @@
       "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
       "block.testmod.stripped_silver_oak_log": "Stripped Silver Oak Log",
       "item.testmod.white_dough": "White Dough",
+      "item.testmod.onion_rings": "Onion Rings",
       "item.testmod.onion": "Onion",
       "item.testmod.large_backpack": "Large Backpack",
       "item.testmod.shreks_logs": "Book of Knowledge",
-      "biome.testmod.silver_oak_forest": "Silver Oak Forest",
       "item.testmod.koldunas": "Ravioli",
       "block.testmod.silver_oak_log": "Silver Oak Log",
       "block.testmod.silver_oak_sapling": "Silver Oak Sapling",
@@ -1111,6 +1168,10 @@
             "children": []
           },
           {
+            "name": "BritishFishFingers",
+            "children": []
+          },
+          {
             "name": "WhiteDough",
             "children": []
           },
@@ -1120,6 +1181,10 @@
           },
           {
             "name": "CinamonBun",
+            "children": []
+          },
+          {
+            "name": "Onion rings",
             "children": []
           },
           {
