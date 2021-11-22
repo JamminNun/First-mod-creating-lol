@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "testmod:blocks/silver_oak_sapling",
+    "particle": "testmod:blocks/silver_oak_sapling"
+  }
+}
