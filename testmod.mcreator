@@ -933,6 +933,63 @@
       "ids": {},
       "registry_name": "book_of_knowledge",
       "path": "~/Misc dalykai/Shrekslogs"
+    },
+    {
+      "name": "BritishFishSticks",
+      "type": "food",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "british_fish_sticks",
+      "path": "~/Maistas/BritishFishFingers"
+    },
+    {
+      "name": "BritishFishStick",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "british_fish_stick",
+      "path": "~/Maistas/BritishFishFingers"
+    },
+    {
+      "name": "OnionRingsFoodEaten",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_rings_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OnionRings",
+      "type": "food",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_rings",
+      "path": "~/Maistas/Onion rings"
+    },
+    {
+      "name": "OnionRing",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "onion_ring",
+      "path": "~/Maistas/Onion rings"
     }
   ],
   "variable_elements": [],
@@ -947,6 +1004,7 @@
       "block.testmod.onion_stage_0": "Onion Stage 0",
       "block.testmod.onion_stage_1": "Onion Stage 1",
       "itemGroup.tabmore_minecraft_creative_tab": "More Minecraft ",
+      "item.testmod.british_fish_sticks": "British Fish Sticks",
       "item.testmod.onion_seed": "Onion Seed",
       "item.testmod.cinamon_bun": "Cinamon Bun",
       "block.testmod.silver_oak_leaves": "Silver Oak Leaves",
@@ -957,6 +1015,7 @@
       "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
       "block.testmod.stripped_silver_oak_log": "Stripped Silver Oak Log",
       "item.testmod.white_dough": "White Dough",
+      "item.testmod.onion_rings": "Onion Rings",
       "item.testmod.onion": "Onion",
       "item.testmod.large_backpack": "Large Backpack",
       "item.testmod.shreks_logs": "Book of Knowledge",
@@ -1027,6 +1086,14 @@
           },
           {
             "name": "Kebabas",
+            "children": []
+          },
+          {
+            "name": "Onion rings",
+            "children": []
+          },
+          {
+            "name": "BritishFishFingers",
             "children": []
           }
         ]
