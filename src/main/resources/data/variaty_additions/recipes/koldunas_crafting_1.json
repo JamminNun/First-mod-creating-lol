@@ -1,0 +1,19 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "variaty_additions:white_dough"
+    },
+    {
+      "item": "minecraft:beef"
+    },
+    {
+      "item": "variaty_additions:onion"
+    }
+  ],
+  "result": {
+    "item": "variaty_additions:koldunas",
+    "count": 4
+  }
+}

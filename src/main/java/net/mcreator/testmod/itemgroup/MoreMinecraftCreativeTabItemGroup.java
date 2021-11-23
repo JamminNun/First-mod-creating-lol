@@ -8,11 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
 import net.mcreator.testmod.item.UraniumIngotItem;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
-@TestmodModElements.ModElement.Tag
-public class MoreMinecraftCreativeTabItemGroup extends TestmodModElements.ModElement {
-	public MoreMinecraftCreativeTabItemGroup(TestmodModElements instance) {
+@VariatyAdditionsModElements.ModElement.Tag
+public class MoreMinecraftCreativeTabItemGroup extends VariatyAdditionsModElements.ModElement {
+	public MoreMinecraftCreativeTabItemGroup(VariatyAdditionsModElements instance) {
 		super(instance, 29);
 	}
 

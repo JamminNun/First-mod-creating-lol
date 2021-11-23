@@ -17,16 +17,16 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@TestmodModElements.ModElement.Tag
-public class SilverOakPlanksBlock extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:silver_oak_planks")
+@VariatyAdditionsModElements.ModElement.Tag
+public class SilverOakPlanksBlock extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:silver_oak_planks")
 	public static final Block block = null;
-	public SilverOakPlanksBlock(TestmodModElements instance) {
+	public SilverOakPlanksBlock(VariatyAdditionsModElements instance) {
 		super(instance, 68);
 	}
 

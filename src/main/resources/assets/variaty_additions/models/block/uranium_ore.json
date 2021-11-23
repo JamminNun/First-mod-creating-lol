@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "variaty_additions:blocks/uranium_ore",
+    "up": "variaty_additions:blocks/uranium_ore",
+    "north": "variaty_additions:blocks/uranium_ore",
+    "east": "variaty_additions:blocks/uranium_ore",
+    "south": "variaty_additions:blocks/uranium_ore",
+    "west": "variaty_additions:blocks/uranium_ore",
+    "particle": "variaty_additions:blocks/uranium_ore"
+  }
+}

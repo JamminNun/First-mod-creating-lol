@@ -14,15 +14,15 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.client.util.ITooltipFlag;
 
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.List;
 
-@TestmodModElements.ModElement.Tag
-public class MeatballsItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:meatballs")
+@VariatyAdditionsModElements.ModElement.Tag
+public class MeatballsItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:meatballs")
 	public static final Item block = null;
-	public MeatballsItem(TestmodModElements instance) {
+	public MeatballsItem(VariatyAdditionsModElements instance) {
 		super(instance, 61);
 	}
 

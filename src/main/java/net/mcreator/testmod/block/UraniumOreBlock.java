@@ -42,17 +42,17 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
-@TestmodModElements.ModElement.Tag
-public class UraniumOreBlock extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:uranium_ore")
+@VariatyAdditionsModElements.ModElement.Tag
+public class UraniumOreBlock extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:uranium_ore")
 	public static final Block block = null;
-	public UraniumOreBlock(TestmodModElements instance) {
+	public UraniumOreBlock(VariatyAdditionsModElements instance) {
 		super(instance, 3);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
@@ -131,7 +131,8 @@ public class UraniumOreBlock extends TestmodModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("testmod:uranium_ore_match"), () -> CustomRuleTest.codec);
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("variaty_additions:uranium_ore_match"),
+					() -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
@@ -147,7 +148,7 @@ public class UraniumOreBlock extends TestmodModElements.ModElement {
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 5)).range(24)
 					.square().func_242731_b(4);
 			event.getRegistry().register(feature.setRegistryName("uranium_ore"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("testmod:uranium_ore"), configuredFeature);
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("variaty_additions:uranium_ore"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

@@ -16,7 +16,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.testmod.TestmodMod;
+import net.mcreator.testmod.VariatyAdditionsMod;
 
 import java.util.Random;
 import java.util.Map;
@@ -25,22 +25,22 @@ public class IronSickleBlockDestroyedWithToolProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				TestmodMod.LOGGER.warn("Failed to load dependency x for procedure IronSickleBlockDestroyedWithTool!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency x for procedure IronSickleBlockDestroyedWithTool!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				TestmodMod.LOGGER.warn("Failed to load dependency y for procedure IronSickleBlockDestroyedWithTool!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency y for procedure IronSickleBlockDestroyedWithTool!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				TestmodMod.LOGGER.warn("Failed to load dependency z for procedure IronSickleBlockDestroyedWithTool!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency z for procedure IronSickleBlockDestroyedWithTool!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				TestmodMod.LOGGER.warn("Failed to load dependency world for procedure IronSickleBlockDestroyedWithTool!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency world for procedure IronSickleBlockDestroyedWithTool!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");

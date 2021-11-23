@@ -9,7 +9,7 @@ import net.minecraft.block.Blocks;
 
 import net.mcreator.testmod.item.OnionSeedItem;
 import net.mcreator.testmod.block.OnionStage0Block;
-import net.mcreator.testmod.TestmodMod;
+import net.mcreator.testmod.VariatyAdditionsMod;
 
 import java.util.Map;
 
@@ -17,27 +17,27 @@ public class OnionSeedRightClickedOnBlockProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				TestmodMod.LOGGER.warn("Failed to load dependency entity for procedure OnionSeedRightClickedOnBlock!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency entity for procedure OnionSeedRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				TestmodMod.LOGGER.warn("Failed to load dependency x for procedure OnionSeedRightClickedOnBlock!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency x for procedure OnionSeedRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				TestmodMod.LOGGER.warn("Failed to load dependency y for procedure OnionSeedRightClickedOnBlock!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency y for procedure OnionSeedRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				TestmodMod.LOGGER.warn("Failed to load dependency z for procedure OnionSeedRightClickedOnBlock!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency z for procedure OnionSeedRightClickedOnBlock!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				TestmodMod.LOGGER.warn("Failed to load dependency world for procedure OnionSeedRightClickedOnBlock!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency world for procedure OnionSeedRightClickedOnBlock!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

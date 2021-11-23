@@ -1,0 +1,22 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "variaty_additions:onion"
+    },
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "result": {
+    "item": "variaty_additions:shreks_logs",
+    "count": 1
+  }
+}

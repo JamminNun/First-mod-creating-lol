@@ -1,0 +1,16 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "variaty_additions:onion"
+    },
+    {
+      "item": "variaty_additions:white_dough"
+    }
+  ],
+  "result": {
+    "item": "variaty_additions:onion_rings",
+    "count": 2
+  }
+}

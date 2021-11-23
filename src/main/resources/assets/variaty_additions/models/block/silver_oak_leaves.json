@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "variaty_additions:blocks/silver_oak_leaves",
+    "up": "variaty_additions:blocks/silver_oak_leaves",
+    "north": "variaty_additions:blocks/silver_oak_leaves",
+    "east": "variaty_additions:blocks/silver_oak_leaves",
+    "south": "variaty_additions:blocks/silver_oak_leaves",
+    "west": "variaty_additions:blocks/silver_oak_leaves",
+    "particle": "variaty_additions:blocks/silver_oak_leaves"
+  }
+}

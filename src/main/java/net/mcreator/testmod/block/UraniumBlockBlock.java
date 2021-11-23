@@ -16,16 +16,16 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@TestmodModElements.ModElement.Tag
-public class UraniumBlockBlock extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:uranium_block")
+@VariatyAdditionsModElements.ModElement.Tag
+public class UraniumBlockBlock extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:uranium_block")
 	public static final Block block = null;
-	public UraniumBlockBlock(TestmodModElements instance) {
+	public UraniumBlockBlock(VariatyAdditionsModElements instance) {
 		super(instance, 64);
 	}
 
@@ -37,7 +37,7 @@ public class UraniumBlockBlock extends TestmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(5f, 3f).setLightLevel(s -> 0).harvestLevel(2)
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(5f, 6f).setLightLevel(s -> 0).harvestLevel(2)
 					.harvestTool(ToolType.PICKAXE).setRequiresTool());
 			setRegistryName("uranium_block");
 		}

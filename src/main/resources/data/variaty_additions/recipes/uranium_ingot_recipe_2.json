@@ -1,0 +1,42 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "variaty_additions:uranium_nugget_recipe_1"
+    },
+    "1": {
+      "item": "variaty_additions:uranium_nugget_recipe_1"
+    },
+    "2": {
+      "item": "variaty_additions:uranium_nugget_recipe_1"
+    },
+    "3": {
+      "item": "variaty_additions:uranium_nugget_recipe_1"
+    },
+    "4": {
+      "item": "variaty_additions:uranium_nugget_recipe_1"
+    },
+    "5": {
+      "item": "variaty_additions:uranium_nugget_recipe_1"
+    },
+    "6": {
+      "item": "variaty_additions:uranium_nugget_recipe_1"
+    },
+    "7": {
+      "item": "variaty_additions:uranium_nugget_recipe_1"
+    },
+    "8": {
+      "item": "variaty_additions:uranium_nugget_recipe_1"
+    }
+  },
+  "result": {
+    "item": "variaty_additions:uranium_ingot",
+    "count": 1
+  }
+}

@@ -18,17 +18,17 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.testmod.procedures.KoldunuBliudasFoodEatenProcedure;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 
-@TestmodModElements.ModElement.Tag
-public class KoldunuBliudasItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:koldunu_bliudas")
+@VariatyAdditionsModElements.ModElement.Tag
+public class KoldunuBliudasItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:koldunu_bliudas")
 	public static final Item block = null;
-	public KoldunuBliudasItem(TestmodModElements instance) {
+	public KoldunuBliudasItem(VariatyAdditionsModElements instance) {
 		super(instance, 59);
 	}
 
@@ -38,7 +38,7 @@ public class KoldunuBliudasItem extends TestmodModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.COMMON)
+			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(1).rarity(Rarity.COMMON)
 					.food((new Food.Builder()).hunger(10).saturation(6f).setAlwaysEdible().build()));
 			setRegistryName("koldunu_bliudas");
 		}

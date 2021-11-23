@@ -19,17 +19,17 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.testmod.procedures.IronSickleBlockDestroyedWithToolProcedure;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 
-@TestmodModElements.ModElement.Tag
-public class IronSickleItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:iron_sickle")
+@VariatyAdditionsModElements.ModElement.Tag
+public class IronSickleItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:iron_sickle")
 	public static final Item block = null;
-	public IronSickleItem(TestmodModElements instance) {
+	public IronSickleItem(VariatyAdditionsModElements instance) {
 		super(instance, 43);
 	}
 

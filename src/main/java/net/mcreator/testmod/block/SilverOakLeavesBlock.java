@@ -26,18 +26,18 @@ import net.minecraft.block.Block;
 
 import net.mcreator.testmod.procedures.SilverOakLeavesBlockDestroyedByPlayerProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
 
-@TestmodModElements.ModElement.Tag
-public class SilverOakLeavesBlock extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:silver_oak_leaves")
+@VariatyAdditionsModElements.ModElement.Tag
+public class SilverOakLeavesBlock extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:silver_oak_leaves")
 	public static final Block block = null;
-	public SilverOakLeavesBlock(TestmodModElements instance) {
+	public SilverOakLeavesBlock(VariatyAdditionsModElements instance) {
 		super(instance, 69);
 	}
 

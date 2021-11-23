@@ -16,17 +16,17 @@ import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.testmod.procedures.KebabasFoodEatenProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 
-@TestmodModElements.ModElement.Tag
-public class KebabasItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:kebabas")
+@VariatyAdditionsModElements.ModElement.Tag
+public class KebabasItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:kebabas")
 	public static final Item block = null;
-	public KebabasItem(TestmodModElements instance) {
+	public KebabasItem(VariatyAdditionsModElements instance) {
 		super(instance, 6);
 	}
 

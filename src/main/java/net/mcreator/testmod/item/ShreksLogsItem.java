@@ -17,17 +17,17 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.testmod.procedures.ShreksLogsRightClickedInAirProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 
-@TestmodModElements.ModElement.Tag
-public class ShreksLogsItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:shreks_logs")
+@VariatyAdditionsModElements.ModElement.Tag
+public class ShreksLogsItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:shreks_logs")
 	public static final Item block = null;
-	public ShreksLogsItem(TestmodModElements instance) {
+	public ShreksLogsItem(VariatyAdditionsModElements instance) {
 		super(instance, 63);
 	}
 

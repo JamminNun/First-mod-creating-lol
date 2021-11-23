@@ -42,7 +42,7 @@ import net.minecraft.block.Block;
 import net.mcreator.testmod.procedures.OnionStage2ProcedureProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
 import net.mcreator.testmod.item.OnionSeedItem;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Random;
 import java.util.Map;
@@ -50,13 +50,13 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
 
-@TestmodModElements.ModElement.Tag
-public class OnionStage2Block extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:onion_stage_2")
+@VariatyAdditionsModElements.ModElement.Tag
+public class OnionStage2Block extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:onion_stage_2")
 	public static final Block block = null;
-	@ObjectHolder("testmod:onion_stage_2")
+	@ObjectHolder("variaty_additions:onion_stage_2")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public OnionStage2Block(TestmodModElements instance) {
+	public OnionStage2Block(VariatyAdditionsModElements instance) {
 		super(instance, 41);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new TileEntityRegisterHandler());
 	}

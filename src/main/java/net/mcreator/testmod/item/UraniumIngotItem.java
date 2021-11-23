@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
-@TestmodModElements.ModElement.Tag
-public class UraniumIngotItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:uranium_ingot")
+@VariatyAdditionsModElements.ModElement.Tag
+public class UraniumIngotItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:uranium_ingot")
 	public static final Item block = null;
-	public UraniumIngotItem(TestmodModElements instance) {
+	public UraniumIngotItem(VariatyAdditionsModElements instance) {
 		super(instance, 14);
 	}
 

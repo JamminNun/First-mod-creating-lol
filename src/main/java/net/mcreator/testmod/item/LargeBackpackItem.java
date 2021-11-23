@@ -38,18 +38,18 @@ import net.minecraft.block.BlockState;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
 import net.mcreator.testmod.gui.LargeBackpackGUIGuiWindow;
 import net.mcreator.testmod.gui.LargeBackpackGUIGui;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
 
 import io.netty.buffer.Unpooled;
 
-@TestmodModElements.ModElement.Tag
-public class LargeBackpackItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:large_backpack")
+@VariatyAdditionsModElements.ModElement.Tag
+public class LargeBackpackItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:large_backpack")
 	public static final Item block = null;
-	public LargeBackpackItem(TestmodModElements instance) {
+	public LargeBackpackItem(VariatyAdditionsModElements instance) {
 		super(instance, 52);
 		MinecraftForge.EVENT_BUS.register(this);
 	}

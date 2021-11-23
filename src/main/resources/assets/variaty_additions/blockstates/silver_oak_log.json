@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "variaty_additions:block/silver_oak_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "variaty_additions:block/silver_oak_log"
+    },
+    "axis=z": {
+      "model": "variaty_additions:block/silver_oak_log",
+      "x": 90
+    }
+  }
+}

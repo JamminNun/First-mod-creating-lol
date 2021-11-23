@@ -28,18 +28,18 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
-import net.mcreator.testmod.TestmodModElements;
-import net.mcreator.testmod.TestmodMod;
+import net.mcreator.testmod.VariatyAdditionsModElements;
+import net.mcreator.testmod.VariatyAdditionsMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@TestmodModElements.ModElement.Tag
-public class LargeBackpackGUIGui extends TestmodModElements.ModElement {
+@VariatyAdditionsModElements.ModElement.Tag
+public class LargeBackpackGUIGui extends VariatyAdditionsModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public LargeBackpackGUIGui(TestmodModElements instance) {
+	public LargeBackpackGUIGui(VariatyAdditionsModElements instance) {
 		super(instance, 55);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
@@ -322,7 +322,7 @@ public class LargeBackpackGUIGui extends TestmodModElements.ModElement {
 
 		private void slotChanged(int slotid, int ctype, int meta) {
 			if (this.world != null && this.world.isRemote()) {
-				TestmodMod.PACKET_HANDLER.sendToServer(new GUISlotChangedMessage(slotid, x, y, z, ctype, meta));
+				VariatyAdditionsMod.PACKET_HANDLER.sendToServer(new GUISlotChangedMessage(slotid, x, y, z, ctype, meta));
 				handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 			}
 		}

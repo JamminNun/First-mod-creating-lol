@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "variaty_additions:blocks/silver_ore",
+    "up": "variaty_additions:blocks/silver_ore",
+    "north": "variaty_additions:blocks/silver_ore",
+    "east": "variaty_additions:blocks/silver_ore",
+    "south": "variaty_additions:blocks/silver_ore",
+    "west": "variaty_additions:blocks/silver_ore",
+    "particle": "variaty_additions:blocks/silver_ore"
+  }
+}

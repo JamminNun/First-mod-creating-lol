@@ -13,16 +13,16 @@ import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
 
 import net.mcreator.testmod.procedures.OnionRingsFoodEatenProcedure;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Map;
 import java.util.HashMap;
 
-@TestmodModElements.ModElement.Tag
-public class OnionRingsItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:onion_rings")
+@VariatyAdditionsModElements.ModElement.Tag
+public class OnionRingsItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:onion_rings")
 	public static final Item block = null;
-	public OnionRingsItem(TestmodModElements instance) {
+	public OnionRingsItem(VariatyAdditionsModElements instance) {
 		super(instance, 74);
 	}
 

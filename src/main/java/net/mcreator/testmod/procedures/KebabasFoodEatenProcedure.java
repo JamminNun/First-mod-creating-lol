@@ -5,7 +5,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.testmod.TestmodMod;
+import net.mcreator.testmod.VariatyAdditionsMod;
 
 import java.util.Map;
 
@@ -13,7 +13,7 @@ public class KebabasFoodEatenProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				TestmodMod.LOGGER.warn("Failed to load dependency entity for procedure KebabasFoodEaten!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency entity for procedure KebabasFoodEaten!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

@@ -33,7 +33,7 @@ public class SmallBackpackGUIGuiWindow extends ContainerScreen<SmallBackpackGUIG
 		this.xSize = 176;
 		this.ySize = 166;
 	}
-	private static final ResourceLocation texture = new ResourceLocation("testmod:textures/small_backpack_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("variaty_additions:textures/small_backpack_gui.png");
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);

@@ -36,7 +36,7 @@ import net.minecraft.block.Block;
 import net.mcreator.testmod.procedures.SilverOakSaplingUpdateTickProcedure;
 import net.mcreator.testmod.procedures.SilverOakSaplingPlantRightClickedProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Random;
 import java.util.Map;
@@ -44,11 +44,11 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Collections;
 
-@TestmodModElements.ModElement.Tag
-public class SilverOakSaplingBlock extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:silver_oak_sapling")
+@VariatyAdditionsModElements.ModElement.Tag
+public class SilverOakSaplingBlock extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:silver_oak_sapling")
 	public static final Block block = null;
-	public SilverOakSaplingBlock(TestmodModElements instance) {
+	public SilverOakSaplingBlock(VariatyAdditionsModElements instance) {
 		super(instance, 72);
 	}
 

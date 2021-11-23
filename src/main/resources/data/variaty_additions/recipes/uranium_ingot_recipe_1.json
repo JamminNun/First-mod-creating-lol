@@ -1,0 +1,13 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "variaty_additions:uranium_block"
+    }
+  ],
+  "result": {
+    "item": "variaty_additions:uranium_ingot",
+    "count": 9
+  }
+}

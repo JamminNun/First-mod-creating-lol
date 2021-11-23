@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "variaty_additions:blocks/silver_oak_sapling",
+    "particle": "variaty_additions:blocks/silver_oak_sapling"
+  }
+}

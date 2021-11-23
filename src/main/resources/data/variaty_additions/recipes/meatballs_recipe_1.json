@@ -1,0 +1,16 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "variaty_additions:onion"
+    },
+    {
+      "item": "minecraft:beef"
+    }
+  ],
+  "result": {
+    "item": "variaty_additions:meatballs",
+    "count": 1
+  }
+}

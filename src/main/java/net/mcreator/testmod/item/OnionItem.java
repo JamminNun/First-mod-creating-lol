@@ -10,13 +10,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
-@TestmodModElements.ModElement.Tag
-public class OnionItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:onion")
+@VariatyAdditionsModElements.ModElement.Tag
+public class OnionItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:onion")
 	public static final Item block = null;
-	public OnionItem(TestmodModElements instance) {
+	public OnionItem(VariatyAdditionsModElements instance) {
 		super(instance, 31);
 	}
 

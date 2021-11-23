@@ -22,16 +22,16 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.List;
 import java.util.Collections;
 
-@TestmodModElements.ModElement.Tag
-public class SilverOakLogBlock extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:silver_oak_log")
+@VariatyAdditionsModElements.ModElement.Tag
+public class SilverOakLogBlock extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:silver_oak_log")
 	public static final Block block = null;
-	public SilverOakLogBlock(TestmodModElements instance) {
+	public SilverOakLogBlock(VariatyAdditionsModElements instance) {
 		super(instance, 63);
 	}
 

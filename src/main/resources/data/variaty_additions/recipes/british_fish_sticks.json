@@ -1,0 +1,16 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "minecraft:fishes"
+    },
+    {
+      "item": "variaty_additions:white_dough"
+    }
+  ],
+  "result": {
+    "item": "variaty_additions:british_fish_sticks",
+    "count": 2
+  }
+}

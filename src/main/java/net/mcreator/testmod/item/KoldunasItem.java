@@ -16,17 +16,17 @@ import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.testmod.procedures.KoldunasFoodEatenProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
 
-@TestmodModElements.ModElement.Tag
-public class KoldunasItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:koldunas")
+@VariatyAdditionsModElements.ModElement.Tag
+public class KoldunasItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:koldunas")
 	public static final Item block = null;
-	public KoldunasItem(TestmodModElements instance) {
+	public KoldunasItem(VariatyAdditionsModElements instance) {
 		super(instance, 3);
 	}
 

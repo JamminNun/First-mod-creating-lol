@@ -14,15 +14,15 @@ import net.minecraft.item.Food;
 import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.List;
 
-@TestmodModElements.ModElement.Tag
-public class CinamonBunItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:cinamon_bun")
+@VariatyAdditionsModElements.ModElement.Tag
+public class CinamonBunItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:cinamon_bun")
 	public static final Item block = null;
-	public CinamonBunItem(TestmodModElements instance) {
+	public CinamonBunItem(VariatyAdditionsModElements instance) {
 		super(instance, 5);
 	}
 

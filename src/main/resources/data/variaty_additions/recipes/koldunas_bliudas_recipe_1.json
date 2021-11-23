@@ -1,0 +1,31 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "variaty_additions:koldunas"
+    },
+    {
+      "item": "variaty_additions:koldunas"
+    },
+    {
+      "item": "variaty_additions:koldunas"
+    },
+    {
+      "item": "variaty_additions:koldunas"
+    },
+    {
+      "item": "variaty_additions:koldunas"
+    },
+    {
+      "item": "variaty_additions:koldunas"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "variaty_additions:koldunu_bliudas",
+    "count": 1
+  }
+}

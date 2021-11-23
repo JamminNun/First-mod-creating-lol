@@ -1,0 +1,8 @@
+{
+  "parent": "variaty_additions:custom/onion_stage_5",
+  "textures": {
+    "all": "variaty_additions:blocks/onion_stage_5",
+    "particle": "variaty_additions:blocks/onion_stage_5",
+    "crop": "variaty_additions:blocks/onion_stage_5"
+  }
+}

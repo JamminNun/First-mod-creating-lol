@@ -9,13 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
-@TestmodModElements.ModElement.Tag
-public class WhiteDoughItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:white_dough")
+@VariatyAdditionsModElements.ModElement.Tag
+public class WhiteDoughItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:white_dough")
 	public static final Item block = null;
-	public WhiteDoughItem(TestmodModElements instance) {
+	public WhiteDoughItem(VariatyAdditionsModElements instance) {
 		super(instance, 7);
 	}
 

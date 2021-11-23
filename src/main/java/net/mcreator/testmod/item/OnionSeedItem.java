@@ -16,16 +16,16 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.testmod.procedures.OnionSeedRightClickedOnBlockProcedure;
 import net.mcreator.testmod.itemgroup.MoreMinecraftCreativeTabItemGroup;
-import net.mcreator.testmod.TestmodModElements;
+import net.mcreator.testmod.VariatyAdditionsModElements;
 
 import java.util.Map;
 import java.util.HashMap;
 
-@TestmodModElements.ModElement.Tag
-public class OnionSeedItem extends TestmodModElements.ModElement {
-	@ObjectHolder("testmod:onion_seed")
+@VariatyAdditionsModElements.ModElement.Tag
+public class OnionSeedItem extends VariatyAdditionsModElements.ModElement {
+	@ObjectHolder("variaty_additions:onion_seed")
 	public static final Item block = null;
-	public OnionSeedItem(TestmodModElements instance) {
+	public OnionSeedItem(VariatyAdditionsModElements instance) {
 		super(instance, 28);
 	}
 

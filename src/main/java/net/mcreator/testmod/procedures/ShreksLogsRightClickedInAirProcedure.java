@@ -8,7 +8,7 @@ import net.minecraft.util.text.ChatType;
 import net.minecraft.util.Util;
 import net.minecraft.server.MinecraftServer;
 
-import net.mcreator.testmod.TestmodMod;
+import net.mcreator.testmod.VariatyAdditionsMod;
 
 import java.util.Map;
 
@@ -16,7 +16,7 @@ public class ShreksLogsRightClickedInAirProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				TestmodMod.LOGGER.warn("Failed to load dependency world for procedure ShreksLogsRightClickedInAir!");
+				VariatyAdditionsMod.LOGGER.warn("Failed to load dependency world for procedure ShreksLogsRightClickedInAir!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

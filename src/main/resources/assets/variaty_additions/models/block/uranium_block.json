@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "variaty_additions:blocks/uranium_block",
+    "up": "variaty_additions:blocks/uranium_block",
+    "north": "variaty_additions:blocks/uranium_block",
+    "east": "variaty_additions:blocks/uranium_block",
+    "south": "variaty_additions:blocks/uranium_block",
+    "west": "variaty_additions:blocks/uranium_block",
+    "particle": "variaty_additions:blocks/uranium_block"
+  }
+}

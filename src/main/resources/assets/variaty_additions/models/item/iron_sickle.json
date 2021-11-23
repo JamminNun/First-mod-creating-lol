@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "variaty_additions:items/iron_sickle"
+  }
+}
