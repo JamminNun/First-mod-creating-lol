@@ -8,7 +8,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "totem_recipe_1"
+      "registry_name": "totem_recipe_1",
+      "path": "~/Misc dalykai"
     },
     {
       "name": "EnchantedGoldenAppleRecipe1",
@@ -17,7 +18,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "enchanted_golden_apple_recipe_1"
+      "registry_name": "enchanted_golden_apple_recipe_1",
+      "path": "~/Misc dalykai"
     },
     {
       "name": "Koldunas",
@@ -904,7 +906,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shreks_logs",
-      "path": "~/Misc dalykai/Shrekslogs"
+      "path": "~/Misc dalykai/meme shit/Shrekslogs"
     },
     {
       "name": "ShreksLogsRightClickedInAir",
@@ -922,7 +924,7 @@
           }
         ]
       },
-      "path": "~/Misc dalykai/Shrekslogs"
+      "path": "~/Misc dalykai/meme shit/Shrekslogs"
     },
     {
       "name": "BookOfKnowledge",
@@ -932,7 +934,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "book_of_knowledge",
-      "path": "~/Misc dalykai/Shrekslogs"
+      "path": "~/Misc dalykai/meme shit/Shrekslogs"
     },
     {
       "name": "SilverOakSaplingUpdateTick",
@@ -1135,6 +1137,16 @@
       "ids": {},
       "registry_name": "silver_block_recipe_1",
       "path": "~/Biomes/Silver Oak forest/Silver pog"
+    },
+    {
+      "name": "Amogus",
+      "type": "livingentity",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amogus",
+      "path": "~/Misc dalykai"
     }
   ],
   "variable_elements": [],
@@ -1162,6 +1174,8 @@
       "item.testmod.white_dough": "White Dough",
       "item.variaty_additions.kebabas": "Burrito",
       "item.variaty_additions.silver_ingot": "Silver Ingot",
+      "entity.variaty_additions.amogus": "Amogus",
+      "item.variaty_additions.amogus_spawn_egg": "Amogus Spawn Egg",
       "item.testmod.large_backpack": "Large Backpack",
       "item.variaty_additions.medium_backpack": "Medium Backpack",
       "item.testmod.koldunas": "Ravioli",
@@ -1243,12 +1257,17 @@
         "name": "Misc dalykai",
         "children": [
           {
-            "name": "Shrekslogs",
+            "name": "backpacks",
             "children": []
           },
           {
-            "name": "backpacks",
-            "children": []
+            "name": "meme shit",
+            "children": [
+              {
+                "name": "Shrekslogs",
+                "children": []
+              }
+            ]
           }
         ]
       },
