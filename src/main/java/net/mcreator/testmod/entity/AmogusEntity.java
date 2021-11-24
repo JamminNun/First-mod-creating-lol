@@ -17,12 +17,16 @@ import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
+import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
@@ -32,7 +36,9 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.testmod.entity.renderer.AmogusRenderer;
 import net.mcreator.testmod.VariatyAdditionsModElements;
@@ -41,7 +47,7 @@ import net.mcreator.testmod.VariatyAdditionsModElements;
 public class AmogusEntity extends VariatyAdditionsModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.4f, 0.3f)).build("amogus").setRegistryName("amogus");
+			.size(0.5f, 0.8f)).build("amogus").setRegistryName("amogus");
 	public AmogusEntity(VariatyAdditionsModElements instance) {
 		super(instance, 82);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new AmogusRenderer.ModelRegisterHandler());
@@ -52,7 +58,8 @@ public class AmogusEntity extends VariatyAdditionsModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("amogus_spawn_egg"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -65536, -16733441, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("amogus_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -69,15 +76,15 @@ public class AmogusEntity extends VariatyAdditionsModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.5);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 30);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
-			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
+			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 2);
 			event.put(entity, ammma.create());
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -96,16 +103,23 @@ public class AmogusEntity extends VariatyAdditionsModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 0.5));
+			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(3, new SwimGoal(this));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, MonsterEntity.class, false, true));
+			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, true));
+			this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(7, new TemptGoal(this, 1, Ingredient.fromItems(Blocks.GRASS_BLOCK.asItem()), false));
 		}
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		@Override
+		public net.minecraft.util.SoundEvent getAmbientSound() {
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("variaty_additions:amogus_living"));
 		}
 
 		@Override
@@ -116,6 +130,15 @@ public class AmogusEntity extends VariatyAdditionsModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source.getImmediateSource() instanceof PotionEntity)
+				return false;
+			if (source == DamageSource.FALL)
+				return false;
+			return super.attackEntityFrom(source, amount);
 		}
 	}
 }

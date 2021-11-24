@@ -1243,10 +1243,61 @@
       "ids": {},
       "registry_name": "ring_of_greater_speeds_recipe_1",
       "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "YummyRing",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yummy_ring",
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "YummyRingItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yummy_ring_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "YummyRingRecipe1",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yummy_ring_recipe_1",
+      "path": "~/Misc dalykai/rings"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "amogus_living",
+      "files": [
+        "guy-yelling-among-us-sound-effect"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.variaty_additions.uranium_nugget_recipe_1": "Uranium Nugget",
@@ -1263,6 +1314,7 @@
       "block.testmod.silver_ore": "Silver Ore",
       "item.testmod.silver_ingot": "Silver Ingot",
       "item.testmod.small_backpack": "Small Backpack",
+      "subtitles.amogus_living": "",
       "item.testmod.uranium_ingot": "Uranium Ingot",
       "item.variaty_additions.base_silver_ring": "Base Silver Ring",
       "item.testmod.medium_backpack": "Medium Backpack",
@@ -1301,6 +1353,7 @@
       "item.variaty_additions.onion_rings": "Onion Rings",
       "item.testmod.onion_seed": "Onion Seed",
       "item.testmod.silver_chicken_spawn_egg": "Silver Chicken Spawn Egg",
+      "item.variaty_additions.yummy_ring": "Yummy Ring",
       "block.variaty_additions.silver_block": "Block of Silver",
       "item.variaty_additions.onion": "Onion",
       "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",

@@ -45,6 +45,8 @@ public class VariatyAdditionsModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public VariatyAdditionsModElements() {
+		sounds.put(new ResourceLocation("variaty_additions", "amogus_living"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("variaty_additions", "amogus_living")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("variaty_additions").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

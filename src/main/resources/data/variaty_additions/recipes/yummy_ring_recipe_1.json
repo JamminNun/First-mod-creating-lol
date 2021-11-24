@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "variaty_additions:base_silver_ring"
+  },
+  "addition": {
+    "item": "minecraft:cake"
+  },
+  "result": {
+    "item": "variaty_additions:yummy_ring"
+  }
+}

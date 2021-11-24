@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:BaseSilverRing"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.CAKE"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:YummyRing"
+    },
+    "name": "yummy_ring_recipe_1",
+    "namespace": "mod"
+  }
+}
