@@ -39,7 +39,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_ore",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "KoldunasFoodEaten",
@@ -175,7 +175,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_ingot",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "UraniumOreRecipe1",
@@ -185,7 +185,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_ore_recipe_1",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "UraniumNuggetRecipe1",
@@ -195,7 +195,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_nugget_recipe_1",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "UraniumIngotRecipe2",
@@ -205,7 +205,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_ingot_recipe_2",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "UraniumNuggetCrafting1",
@@ -215,7 +215,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_nugget_crafting_1",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "UraniumNuggetFuel",
@@ -225,7 +225,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_nugget_fuel",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "UraniumIngotFuel",
@@ -235,7 +235,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_ingot_fuel",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "OnionSeed",
@@ -796,7 +796,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_ingot_recipe_1",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "StrippedSilverOakLog",
@@ -816,7 +816,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_block_fuel",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "SilverOakLeaves",
@@ -866,7 +866,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_block_recipe_1",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "SilverOakLog",
@@ -896,7 +896,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "uranium_block",
-      "path": "~/Uranium"
+      "path": "~/Misc dalykai/Uranium"
     },
     {
       "name": "ShreksLogs",
@@ -1147,6 +1147,26 @@
       "ids": {},
       "registry_name": "amogus",
       "path": "~/Misc dalykai"
+    },
+    {
+      "name": "BaseSilverRing",
+      "type": "item",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "base_silver_ring",
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "BaseSilverRingRecip1",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "base_silver_ring_recip_1",
+      "path": "~/Misc dalykai/rings"
     }
   ],
   "variable_elements": [],
@@ -1167,6 +1187,7 @@
       "item.testmod.silver_ingot": "Silver Ingot",
       "item.testmod.small_backpack": "Small Backpack",
       "item.testmod.uranium_ingot": "Uranium Ingot",
+      "item.variaty_additions.base_silver_ring": "Base Silver Ring",
       "item.testmod.medium_backpack": "Medium Backpack",
       "item.variaty_additions.meatballs": "Meatballs",
       "block.testmod.stripped_silver_oak_log": "Stripped Silver Oak Log",
@@ -1268,12 +1289,16 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Uranium",
+            "children": []
+          },
+          {
+            "name": "rings",
+            "children": []
           }
         ]
-      },
-      {
-        "name": "Uranium",
-        "children": []
       },
       {
         "name": "Maistas",

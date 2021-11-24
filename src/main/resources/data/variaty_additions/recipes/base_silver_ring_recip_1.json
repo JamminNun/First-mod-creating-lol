@@ -1,0 +1,27 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "variaty_additions:silver_ingot"
+    },
+    "3": {
+      "item": "variaty_additions:silver_ingot"
+    },
+    "5": {
+      "item": "variaty_additions:silver_ingot"
+    },
+    "7": {
+      "item": "variaty_additions:silver_ingot"
+    }
+  },
+  "result": {
+    "item": "variaty_additions:base_silver_ring",
+    "count": 1
+  }
+}
