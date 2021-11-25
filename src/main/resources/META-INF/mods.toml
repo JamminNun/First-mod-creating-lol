@@ -3,15 +3,15 @@ loaderVersion="[36,)"
 license="Academic Free License v3.0"
 
 [[mods]]
-modId="testmod"
+modId="variaty_additions"
 version="1.0.0"
-displayName="TestMod"
+displayName="Variaty Additions"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 authors="JamminNun, MCreator"
 
-[[dependencies.testmod]]
+[[dependencies.variaty_additions]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5]"
