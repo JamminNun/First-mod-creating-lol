@@ -26,7 +26,7 @@ public class RingOfHealingItemInInventoryTickProcedure {
 		}
 		if (((entity.getPersistentData().getDouble("VAringofhealing")) == 1)) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) + 1));
+				((LivingEntity) entity).setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) + 2));
 		}
 	}
 }
