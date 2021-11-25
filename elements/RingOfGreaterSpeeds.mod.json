@@ -8,7 +8,7 @@
     "name": "Ring of Greater Speeds",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:MoreMinecraftCreativeTab"
+      "value": "CUSTOM:Rings"
     },
     "stackSize": 1,
     "enchantability": 0,

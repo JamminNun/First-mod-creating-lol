@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "variaty_additions:base_silver_ring"
+  },
+  "addition": {
+    "item": "minecraft:golden_apple"
+  },
+  "result": {
+    "item": "variaty_additions:ring_of_healing"
+  }
+}

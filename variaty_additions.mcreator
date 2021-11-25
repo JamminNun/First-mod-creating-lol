@@ -608,7 +608,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "iron_sickle",
-      "path": "~/Farming Items"
+      "path": "~/Misc dalykai/Farming Items"
     },
     {
       "name": "IronSickleBlockDestroyedWithTool",
@@ -638,7 +638,7 @@
           }
         ]
       },
-      "path": "~/Farming Items"
+      "path": "~/Misc dalykai/Farming Items"
     },
     {
       "name": "SmallBackpack",
@@ -1243,6 +1243,54 @@
       "ids": {},
       "registry_name": "ring_of_greater_speeds_recipe_1",
       "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "Rings",
+      "type": "tab",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rings",
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "RingOfHealing",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ring_of_healing",
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "RingOfHealingItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ring_of_healing_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "RingOfHealingRecipe1",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ring_of_healing_recipe_1",
+      "path": "~/Misc dalykai/rings"
     }
   ],
   "variable_elements": [],
@@ -1299,6 +1347,7 @@
       "block.testmod.onion_stage_3": "Onion Stage 3",
       "block.testmod.onion_stage_4": "Onion Stage 4",
       "block.testmod.onion_stage_5": "Onion Stage 5",
+      "itemGroup.tabrings": "Rings",
       "item.variaty_additions.onion_seed": "Onion Seed",
       "item.variaty_additions.small_backpack": "Small Backpack",
       "item.testmod.kebabas": "Burrito",
@@ -1313,6 +1362,7 @@
       "item.testmod.silver_chicken_spawn_egg": "Silver Chicken Spawn Egg",
       "block.variaty_additions.silver_block": "Block of Silver",
       "item.variaty_additions.onion": "Onion",
+      "item.variaty_additions.ring_of_healing": "Ring Of Healing",
       "item.testmod.uranium_nugget_recipe_1": "Uranium Nugget",
       "item.variaty_additions.uranium_ingot": "Uranium Ingot",
       "block.variaty_additions.onion_stage_0": "Onion Stage 0",
@@ -1359,10 +1409,6 @@
         ]
       },
       {
-        "name": "Farming Items",
-        "children": []
-      },
-      {
         "name": "Misc dalykai",
         "children": [
           {
@@ -1384,6 +1430,10 @@
           },
           {
             "name": "rings",
+            "children": []
+          },
+          {
+            "name": "Farming Items",
             "children": []
           }
         ]
@@ -1431,18 +1481,19 @@
     "modid": "variaty_additions",
     "modName": "Variaty Additions",
     "version": "1.0.0",
-    "author": "Ignas, MCreator",
+    "author": "JamminNun, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "test1",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "modElementsPackage": "net.mcreator.testmod",
+    "modElementsPackage": "net.mcreator.variatyadditions",
     "lockBaseModFiles": false
   },
   "mcreatorVersion": 202100236710

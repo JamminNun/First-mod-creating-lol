@@ -8,7 +8,8 @@ version="1.0.0"
 displayName="Variaty Additions"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="Ignas, MCreator"
+logoFile="logo.png"
+authors="JamminNun, MCreator"
 
 [[dependencies.variaty_additions]]
     modId="minecraft"

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ring_of_swiftness",
+    "texture": "ring_of_healing",
     "customModelName": "Normal",
-    "name": "Ring of Swiftness",
+    "name": "Ring Of Healing",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Rings"
@@ -24,13 +24,15 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Fully heals overtime"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInInventoryTick": {
-      "name": "RingOfSwiftnessItemInInventoryTick"
+      "name": "RingOfHealingItemInInventoryTick"
     },
     "hasDispenseBehavior": false
   }
