@@ -1167,10 +1167,95 @@
       "ids": {},
       "registry_name": "base_silver_ring_recip_1",
       "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "RingOfSwiftness",
+      "type": "item",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ring_of_swiftness",
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "RingOfSwiftnessRecipe1",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ring_of_swiftness_recipe_1",
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "RingOfSwiftnessItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ring_of_swiftness_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "RingOfGreaterSpeedsItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ring_of_greater_speeds_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "RingOfGreaterSpeeds",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ring_of_greater_speeds",
+      "path": "~/Misc dalykai/rings"
+    },
+    {
+      "name": "RingOfGreaterSpeedsRecipe1",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ring_of_greater_speeds_recipe_1",
+      "path": "~/Misc dalykai/rings"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "amogus_living",
+      "files": [
+        "guy-yelling-among-us-sound-effect"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.variaty_additions.uranium_nugget_recipe_1": "Uranium Nugget",
@@ -1181,11 +1266,13 @@
       "block.testmod.silver_oak_leaves": "Silver Oak Leaves",
       "item.testmod.cinamon_bun": "Cinamon Bun",
       "entity.testmod.silver_chicken": "Silver Chicken",
+      "item.variaty_additions.ring_of_greater_speeds": "Ring of Greater Speeds",
       "item.variaty_additions.cinamon_bun": "Cinamon Bun",
       "block.testmod.uranium_ore": "Uranium Ore",
       "block.testmod.silver_ore": "Silver Ore",
       "item.testmod.silver_ingot": "Silver Ingot",
       "item.testmod.small_backpack": "Small Backpack",
+      "subtitles.amogus_living": "",
       "item.testmod.uranium_ingot": "Uranium Ingot",
       "item.variaty_additions.base_silver_ring": "Base Silver Ring",
       "item.testmod.medium_backpack": "Medium Backpack",
@@ -1230,6 +1317,7 @@
       "item.variaty_additions.uranium_ingot": "Uranium Ingot",
       "block.variaty_additions.onion_stage_0": "Onion Stage 0",
       "block.variaty_additions.onion_stage_1": "Onion Stage 1",
+      "item.variaty_additions.ring_of_swiftness": "Ring of Swiftness",
       "block.testmod.silver_block": "Block of Silver",
       "block.variaty_additions.onion_stage_4": "Onion Stage 4",
       "item.testmod.onion_rings": "Onion Rings",

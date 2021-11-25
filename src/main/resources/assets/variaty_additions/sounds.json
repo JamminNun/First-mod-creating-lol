@@ -1,1 +1,11 @@
-{}
+{
+  "amogus_living": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "variaty_additions:guy-yelling-among-us-sound-effect",
+        "stream": false
+      }
+    ]
+  }
+}
