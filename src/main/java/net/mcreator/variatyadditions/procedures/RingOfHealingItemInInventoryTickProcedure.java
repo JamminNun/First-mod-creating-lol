@@ -1,5 +1,7 @@
 package net.mcreator.variatyadditions.procedures;
 
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
@@ -17,16 +19,10 @@ public class RingOfHealingItemInInventoryTickProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((((entity.getPersistentData().getDouble("VAringofhealing")) == 0)
-				&& (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
-						.getItem() == RingOfHealingItem.block))) {
-			entity.getPersistentData().putDouble("VAringofhealing", 60);
-		} else {
-			entity.getPersistentData().putDouble("VAringofhealing", ((entity.getPersistentData().getDouble("VAringofhealing")) - 1));
-		}
-		if (((entity.getPersistentData().getDouble("VAringofhealing")) == 1)) {
+		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemOffhand() : ItemStack.EMPTY)
+				.getItem() == RingOfHealingItem.block)) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).setHealth((float) (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) + 2));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.REGENERATION, (int) 10, (int) 0, (true), (true)));
 		}
 	}
 }

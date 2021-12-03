@@ -906,7 +906,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shreks_logs",
-      "path": "~/Misc dalykai/meme shit/Shrekslogs"
+      "path": "~/Misc dalykai/magic/meme shit/Shrekslogs"
     },
     {
       "name": "ShreksLogsRightClickedInAir",
@@ -924,7 +924,7 @@
           }
         ]
       },
-      "path": "~/Misc dalykai/meme shit/Shrekslogs"
+      "path": "~/Misc dalykai/magic/meme shit/Shrekslogs"
     },
     {
       "name": "BookOfKnowledge",
@@ -934,7 +934,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "book_of_knowledge",
-      "path": "~/Misc dalykai/meme shit/Shrekslogs"
+      "path": "~/Misc dalykai/magic/meme shit/Shrekslogs"
     },
     {
       "name": "SilverOakSaplingUpdateTick",
@@ -1156,7 +1156,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "base_silver_ring",
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "BaseSilverRingRecip1",
@@ -1166,7 +1166,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "base_silver_ring_recip_1",
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfSwiftness",
@@ -1176,7 +1176,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ring_of_swiftness",
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfSwiftnessRecipe1",
@@ -1186,7 +1186,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ring_of_swiftness_recipe_1",
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfSwiftnessItemInInventoryTick",
@@ -1204,7 +1204,7 @@
           }
         ]
       },
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfGreaterSpeedsItemInInventoryTick",
@@ -1222,7 +1222,7 @@
           }
         ]
       },
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfGreaterSpeeds",
@@ -1232,7 +1232,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ring_of_greater_speeds",
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfGreaterSpeedsRecipe1",
@@ -1242,7 +1242,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ring_of_greater_speeds_recipe_1",
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "Rings",
@@ -1252,7 +1252,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rings",
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfHealing",
@@ -1262,7 +1262,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ring_of_healing",
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfHealingItemInInventoryTick",
@@ -1280,7 +1280,7 @@
           }
         ]
       },
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfHealingRecipe1",
@@ -1290,7 +1290,17 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ring_of_healing_recipe_1",
-      "path": "~/Misc dalykai/rings"
+      "path": "~/Misc dalykai/magic/rings"
+    },
+    {
+      "name": "SilverChicken",
+      "type": "livingentity",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silver_chicken",
+      "path": "~/Biomes/Silver Oak forest/mobs"
     }
   ],
   "variable_elements": [],
@@ -1337,6 +1347,7 @@
       "item.testmod.koldunas": "Ravioli",
       "item.variaty_additions.iron_sickle": "Iron Sickle",
       "block.variaty_additions.uranium_block": "Block of Uranium",
+      "entity.variaty_additions.silver_chicken": "Silver Chicken",
       "item.variaty_additions.shreks_logs": "Book of Knowledge",
       "block.testmod.uranium_block": "Block of Uranium",
       "block.variaty_additions.uranium_ore": "Uranium Ore",
@@ -1353,6 +1364,7 @@
       "item.testmod.kebabas": "Burrito",
       "block.testmod.onion_stage_0": "Onion Stage 0",
       "block.testmod.onion_stage_1": "Onion Stage 1",
+      "item.variaty_additions.silver_chicken_spawn_egg": "Silver Chicken Spawn Egg",
       "block.variaty_additions.silver_oak_leaves": "Silver Oak Leaves",
       "block.variaty_additions.silver_oak_planks": "Silver Oak Planks",
       "block.variaty_additions.stripped_silver_oak_log": "Stripped Silver Oak Log",
@@ -1403,6 +1415,10 @@
               {
                 "name": "Silver pog",
                 "children": []
+              },
+              {
+                "name": "mobs",
+                "children": []
               }
             ]
           }
@@ -1416,25 +1432,30 @@
             "children": []
           },
           {
-            "name": "meme shit",
-            "children": [
-              {
-                "name": "Shrekslogs",
-                "children": []
-              }
-            ]
-          },
-          {
             "name": "Uranium",
-            "children": []
-          },
-          {
-            "name": "rings",
             "children": []
           },
           {
             "name": "Farming Items",
             "children": []
+          },
+          {
+            "name": "magic",
+            "children": [
+              {
+                "name": "meme shit",
+                "children": [
+                  {
+                    "name": "Shrekslogs",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "rings",
+                "children": []
+              }
+            ]
           }
         ]
       },
