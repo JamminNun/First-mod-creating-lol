@@ -1301,6 +1301,26 @@
       "ids": {},
       "registry_name": "silver_chicken",
       "path": "~/Biomes/Silver Oak forest/mobs"
+    },
+    {
+      "name": "SilverFeather",
+      "type": "item",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silver_feather",
+      "path": "~/Biomes/Silver Oak forest/mobs"
+    },
+    {
+      "name": "SilverChickenLootTable",
+      "type": "loottable",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silver_chicken_loot_table",
+      "path": "~/Biomes/Silver Oak forest/mobs"
     }
   ],
   "variable_elements": [],
@@ -1386,6 +1406,7 @@
       "block.variaty_additions.onion_stage_5": "Onion Stage 5",
       "block.variaty_additions.onion_stage_2": "Onion Stage 2",
       "block.variaty_additions.onion_stage_3": "Onion Stage 3",
+      "item.variaty_additions.silver_feather": "Silver Feather",
       "item.testmod.onion": "Onion",
       "item.variaty_additions.british_fish_sticks": "Fish Sticks",
       "item.testmod.shreks_logs": "Book of Knowledge",
@@ -1444,12 +1465,7 @@
             "children": [
               {
                 "name": "meme shit",
-                "children": [
-                  {
-                    "name": "Shrekslogs",
-                    "children": []
-                  }
-                ]
+                "children": []
               },
               {
                 "name": "rings",

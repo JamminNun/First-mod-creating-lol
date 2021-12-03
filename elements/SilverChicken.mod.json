@@ -7,9 +7,9 @@
     "mobModelName": "Modelsilverchicken",
     "mobModelTexture": "silverchicken.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
-    "modelShadowSize": 0.5,
+    "modelWidth": 0.4,
+    "modelHeight": 0.6,
+    "modelShadowSize": 0.30000000000000004,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
@@ -77,7 +77,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "Items.CHICKEN"
     },
     "livingSound": {
       "value": "entity.chicken.ambient"
@@ -99,8 +99,8 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasAI": true,
-    "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
+    "aiBase": "Chicken",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": true,
     "tameable": false,
     "breedTriggerItems": [
@@ -127,11 +127,15 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
-    "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "spawningProbability": 10,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 3,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:SilverOakForest"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

@@ -26,9 +26,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.PanicGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -40,6 +40,7 @@ import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AgeableEntity;
+import net.minecraft.block.material.Material;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.variatyadditions.item.OnionSeedItem;
@@ -48,9 +49,9 @@ import net.mcreator.variatyadditions.VariatyAdditionsModElements;
 
 @VariatyAdditionsModElements.ModElement.Tag
 public class SilverChickenEntity extends VariatyAdditionsModElements.ModElement {
-	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("silver_chicken").setRegistryName("silver_chicken");
+			.size(0.4f, 0.6f)).build("silver_chicken").setRegistryName("silver_chicken");
 	public SilverChickenEntity(VariatyAdditionsModElements instance) {
 		super(instance, 93);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new SilverChickenRenderer.ModelRegisterHandler());
@@ -67,13 +68,19 @@ public class SilverChickenEntity extends VariatyAdditionsModElements.ModElement 
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("variaty_additions:silver_oak_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
+		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 10, 1, 3));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				MonsterEntity::canMonsterSpawn);
+				(entityType, world, reason, pos,
+						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
@@ -109,11 +116,17 @@ public class SilverChickenEntity extends VariatyAdditionsModElements.ModElement 
 			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(3, new SwimGoal(this));
+			this.goalSelector.addGoal(4, new PanicGoal(this, 1.2));
 		}
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(Items.CHICKEN));
 		}
 
 		@Override

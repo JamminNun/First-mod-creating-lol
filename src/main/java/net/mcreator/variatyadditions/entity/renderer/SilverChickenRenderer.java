@@ -25,7 +25,7 @@ public class SilverChickenRenderer {
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(SilverChickenEntity.entity, renderManager -> {
-				return new MobRenderer(renderManager, new Modelsilverchicken(), 0.5f) {
+				return new MobRenderer(renderManager, new Modelsilverchicken(), 0.3f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("variaty_additions:textures/silverchicken.png");
