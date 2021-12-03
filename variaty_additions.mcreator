@@ -905,8 +905,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shreks_logs",
-      "path": "~/Misc dalykai/meme shit/Shrekslogs"
+      "registry_name": "shreks_logs"
     },
     {
       "name": "ShreksLogsRightClickedInAir",
@@ -923,8 +922,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/Misc dalykai/meme shit/Shrekslogs"
+      }
     },
     {
       "name": "BookOfKnowledge",
@@ -933,8 +931,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "book_of_knowledge",
-      "path": "~/Misc dalykai/meme shit/Shrekslogs"
+      "registry_name": "book_of_knowledge"
     },
     {
       "name": "SilverOakSaplingUpdateTick",
@@ -1155,8 +1152,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "base_silver_ring",
-      "path": "~/Misc dalykai/rings"
+      "registry_name": "base_silver_ring"
     },
     {
       "name": "BaseSilverRingRecip1",
@@ -1165,8 +1161,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "base_silver_ring_recip_1",
-      "path": "~/Misc dalykai/rings"
+      "registry_name": "base_silver_ring_recip_1"
     },
     {
       "name": "RingOfSwiftness",
@@ -1175,8 +1170,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_swiftness",
-      "path": "~/Misc dalykai/rings"
+      "registry_name": "ring_of_swiftness"
     },
     {
       "name": "RingOfSwiftnessRecipe1",
@@ -1185,8 +1179,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_swiftness_recipe_1",
-      "path": "~/Misc dalykai/rings"
+      "registry_name": "ring_of_swiftness_recipe_1"
     },
     {
       "name": "RingOfSwiftnessItemInInventoryTick",
@@ -1203,8 +1196,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/Misc dalykai/rings"
+      }
     },
     {
       "name": "RingOfGreaterSpeedsItemInInventoryTick",
@@ -1221,8 +1213,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/Misc dalykai/rings"
+      }
     },
     {
       "name": "RingOfGreaterSpeeds",
@@ -1231,8 +1222,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_greater_speeds",
-      "path": "~/Misc dalykai/rings"
+      "registry_name": "ring_of_greater_speeds"
     },
     {
       "name": "RingOfGreaterSpeedsRecipe1",
@@ -1241,8 +1231,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_greater_speeds_recipe_1",
-      "path": "~/Misc dalykai/rings"
+      "registry_name": "ring_of_greater_speeds_recipe_1"
     },
     {
       "name": "Rings",
@@ -1251,8 +1240,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rings",
-      "path": "~/Misc dalykai/rings"
+      "registry_name": "rings"
     },
     {
       "name": "RingOfHealing",
@@ -1261,8 +1249,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_healing",
-      "path": "~/Misc dalykai/rings"
+      "registry_name": "ring_of_healing"
     },
     {
       "name": "RingOfHealingItemInInventoryTick",
@@ -1279,8 +1266,7 @@
             "type": "entity"
           }
         ]
-      },
-      "path": "~/Misc dalykai/rings"
+      }
     },
     {
       "name": "RingOfHealingRecipe1",
@@ -1289,8 +1275,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_healing_recipe_1",
-      "path": "~/Misc dalykai/rings"
+      "registry_name": "ring_of_healing_recipe_1"
     },
     {
       "name": "SilverChicken",
