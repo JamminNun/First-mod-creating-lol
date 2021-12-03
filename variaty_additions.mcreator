@@ -905,7 +905,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "shreks_logs"
+      "registry_name": "shreks_logs",
+      "path": "~/Misc dalykai/magic/meme shit"
     },
     {
       "name": "ShreksLogsRightClickedInAir",
@@ -922,7 +923,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Misc dalykai/magic/meme shit"
     },
     {
       "name": "BookOfKnowledge",
@@ -931,7 +933,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "book_of_knowledge"
+      "registry_name": "book_of_knowledge",
+      "path": "~/Misc dalykai/magic/meme shit"
     },
     {
       "name": "SilverOakSaplingUpdateTick",
@@ -1152,7 +1155,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "base_silver_ring"
+      "registry_name": "base_silver_ring",
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "BaseSilverRingRecip1",
@@ -1161,7 +1165,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "base_silver_ring_recip_1"
+      "registry_name": "base_silver_ring_recip_1",
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfSwiftness",
@@ -1170,7 +1175,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_swiftness"
+      "registry_name": "ring_of_swiftness",
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfSwiftnessRecipe1",
@@ -1179,7 +1185,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_swiftness_recipe_1"
+      "registry_name": "ring_of_swiftness_recipe_1",
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfSwiftnessItemInInventoryTick",
@@ -1196,7 +1203,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfGreaterSpeedsItemInInventoryTick",
@@ -1213,7 +1221,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfGreaterSpeeds",
@@ -1222,7 +1231,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_greater_speeds"
+      "registry_name": "ring_of_greater_speeds",
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfGreaterSpeedsRecipe1",
@@ -1231,7 +1241,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_greater_speeds_recipe_1"
+      "registry_name": "ring_of_greater_speeds_recipe_1",
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "Rings",
@@ -1240,7 +1251,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "rings"
+      "registry_name": "rings",
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfHealing",
@@ -1249,7 +1261,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_healing"
+      "registry_name": "ring_of_healing",
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfHealingItemInInventoryTick",
@@ -1266,7 +1279,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "RingOfHealingRecipe1",
@@ -1275,7 +1289,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "ring_of_healing_recipe_1"
+      "registry_name": "ring_of_healing_recipe_1",
+      "path": "~/Misc dalykai/magic/rings"
     },
     {
       "name": "SilverChicken",
@@ -1441,11 +1456,11 @@
             "name": "magic",
             "children": [
               {
-                "name": "meme shit",
+                "name": "rings",
                 "children": []
               },
               {
-                "name": "rings",
+                "name": "meme shit",
                 "children": []
               }
             ]
