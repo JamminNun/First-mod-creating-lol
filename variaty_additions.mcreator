@@ -1394,7 +1394,7 @@
             "name": "Silver Oak forest",
             "children": [
               {
-                "name": "medis lol",
+                "name": "mobs",
                 "children": []
               },
               {
@@ -1402,7 +1402,7 @@
                 "children": []
               },
               {
-                "name": "mobs",
+                "name": "medis lol",
                 "children": []
               }
             ]
@@ -1412,14 +1412,6 @@
       {
         "name": "Misc dalykai",
         "children": [
-          {
-            "name": "backpacks",
-            "children": []
-          },
-          {
-            "name": "Uranium",
-            "children": []
-          },
           {
             "name": "Farming Items",
             "children": []
@@ -1441,6 +1433,14 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Uranium",
+            "children": []
+          },
+          {
+            "name": "backpacks",
+            "children": []
           }
         ]
       },
