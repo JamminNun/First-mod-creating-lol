@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "texture": "variaty_additions:blocks/silver_oak_planks"
+  }
+}

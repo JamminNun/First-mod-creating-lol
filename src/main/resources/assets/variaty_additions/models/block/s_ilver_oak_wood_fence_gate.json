@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "variaty_additions:blocks/silver_oak_planks"
+  }
+}

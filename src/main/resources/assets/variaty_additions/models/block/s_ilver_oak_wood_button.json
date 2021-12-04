@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "variaty_additions:blocks/silver_oak_planks"
+  }
+}

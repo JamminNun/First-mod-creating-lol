@@ -1,0 +1,13 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "variaty_additions:silver_oak_planks"
+    }
+  ],
+  "result": {
+    "item": "variaty_additions:s_ilver_oak_wood_button",
+    "count": 1
+  }
+}

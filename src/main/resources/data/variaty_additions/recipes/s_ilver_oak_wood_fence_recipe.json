@@ -1,0 +1,32 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "variaty_additions:silver_oak_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "variaty_additions:silver_oak_planks"
+    },
+    "3": {
+      "item": "variaty_additions:silver_oak_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "variaty_additions:silver_oak_planks"
+    }
+  },
+  "result": {
+    "item": "variaty_additions:s_ilver_oak_wood_fence",
+    "count": 3
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "variaty_additions:blocks/silver_oak_planks",
+    "top": "variaty_additions:blocks/silver_oak_planks",
+    "side": "variaty_additions:blocks/silver_oak_planks"
+  }
+}

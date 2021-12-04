@@ -2,19 +2,20 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "silver_oak_top",
-    "textureTop": "silver_oak_top",
-    "textureLeft": "silver_oak_side",
-    "textureFront": "silver_oak_side",
-    "textureRight": "silver_oak_side",
-    "textureBack": "silver_oak_side",
+    "texture": "silver_oak_planks",
+    "textureTop": "silver_oak_planks",
+    "textureLeft": "",
+    "textureFront": "silver_oak_planks",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Slab",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -32,16 +33,16 @@
         "subtract": false
       }
     ],
-    "name": "Silver Oak Log",
+    "name": "SIlverOakWood Slab",
     "specialInfo": [],
     "hardness": 2.0,
-    "resistance": 2.0,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:MoreMinecraftCreativeTab"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -50,7 +51,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
       "value": "WOOD"
     },
@@ -123,7 +124,11 @@
     "fluidRestrictions": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

@@ -1,0 +1,33 @@
+{
+  "group": "variaty_additions",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "variaty_additions:silver_oak_planks"
+    },
+    "3": {
+      "item": "variaty_additions:silver_oak_planks"
+    },
+    "4": {
+      "item": "variaty_additions:silver_oak_planks"
+    },
+    "6": {
+      "item": "variaty_additions:silver_oak_planks"
+    },
+    "7": {
+      "item": "variaty_additions:silver_oak_planks"
+    },
+    "8": {
+      "item": "variaty_additions:silver_oak_planks"
+    }
+  },
+  "result": {
+    "item": "variaty_additions:s_ilver_oak_wood_stairs",
+    "count": 4
+  }
+}

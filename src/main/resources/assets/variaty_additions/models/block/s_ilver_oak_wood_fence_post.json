@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "variaty_additions:blocks/silver_oak_planks",
+    "particle": "variaty_additions:blocks/silver_oak_planks"
+  }
+}

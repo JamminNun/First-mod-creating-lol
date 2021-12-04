@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "variaty_additions:block/s_ilver_oak_wood_pressure_plate"
+    },
+    "powered=true": {
+      "model": "variaty_additions:block/s_ilver_oak_wood_pressure_plate_down"
+    }
+  }
+}

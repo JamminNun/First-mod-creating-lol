@@ -1,0 +1,41 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SilverOakLog"
+      },
+      {
+        "value": "CUSTOM:SilverOakPlanks"
+      },
+      {
+        "value": "CUSTOM:StrippedSilverOakLog"
+      },
+      {
+        "value": "CUSTOM:SIlverOakWoodStairs"
+      },
+      {
+        "value": "CUSTOM:SIlverOakWoodSlab"
+      },
+      {
+        "value": "CUSTOM:SIlverOakWoodFence"
+      },
+      {
+        "value": "CUSTOM:SIlverOakWoodFenceGate"
+      },
+      {
+        "value": "CUSTOM:SIlverOakWoodPressurePlate"
+      },
+      {
+        "value": "CUSTOM:SIlverOakWoodButton"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "silveroakwood_log",
+    "namespace": "forge"
+  }
+}

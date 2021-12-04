@@ -1300,7 +1300,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "silver_chicken",
-      "path": "~/Biomes/Silver Oak forest/mobs"
+      "path": "~/Biomes/Silver Oak forest/mobs/silver chicken"
     },
     {
       "name": "SilverFeather",
@@ -1310,7 +1310,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "silver_feather",
-      "path": "~/Biomes/Silver Oak forest/mobs"
+      "path": "~/Biomes/Silver Oak forest/mobs/silver chicken"
     },
     {
       "name": "SilverChickenLootTable",
@@ -1320,7 +1320,191 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "silver_chicken_loot_table",
-      "path": "~/Biomes/Silver Oak forest/mobs"
+      "path": "~/Biomes/Silver Oak forest/mobs/silver chicken"
+    },
+    {
+      "name": "SIlverOakWoodStairs",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_stairs",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodSlab",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_slab",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodFence",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_fence",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodFenceGate",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_fence_gate",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodPressurePlate",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_pressure_plate",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodButton",
+      "type": "block",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_button",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodItemsTag",
+      "type": "tag",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_items_tag",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_planks_recipe",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodStairsRecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_stairs_recipe",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodSlabRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_slab_recipe",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodFenceRecipe",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_fence_recipe",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_fence_gate_recipe",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_pressure_plate_recipe",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodButtonRecipe",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_button_recipe",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SIlverOakWoodStickRecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "s_ilver_oak_wood_stick_recipe",
+      "path": "~/Biomes/Silver Oak forest/medis lol"
+    },
+    {
+      "name": "SilverChickenEntityDies",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silver_chicken_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Biomes/Silver Oak forest/mobs/silver chicken"
     }
   ],
   "variable_elements": [],
@@ -1351,6 +1535,7 @@
       "item.testmod.silver_ingot": "Silver Ingot",
       "item.testmod.small_backpack": "Small Backpack",
       "subtitles.amogus_living": "",
+      "block.variaty_additions.s_ilver_oak_wood_fence_gate": "SIlverOakWood Fence Gate",
       "item.testmod.uranium_ingot": "Uranium Ingot",
       "item.variaty_additions.base_silver_ring": "Base Silver Ring",
       "item.testmod.medium_backpack": "Medium Backpack",
@@ -1366,6 +1551,7 @@
       "item.variaty_additions.medium_backpack": "Medium Backpack",
       "item.testmod.koldunas": "Ravioli",
       "item.variaty_additions.iron_sickle": "Iron Sickle",
+      "block.variaty_additions.s_ilver_oak_wood_fence": "SIlverOakWood Fence",
       "block.variaty_additions.uranium_block": "Block of Uranium",
       "entity.variaty_additions.silver_chicken": "Silver Chicken",
       "item.variaty_additions.shreks_logs": "Book of Knowledge",
@@ -1373,7 +1559,9 @@
       "block.variaty_additions.uranium_ore": "Uranium Ore",
       "item.variaty_additions.koldunu_bliudas": "Bowl of Ravioli",
       "block.variaty_additions.silver_oak_log": "Silver Oak Log",
+      "block.variaty_additions.s_ilver_oak_wood_button": "SIlverOakWood Button",
       "item.testmod.koldunu_bliudas": "Bowl of Ravioli",
+      "block.variaty_additions.s_ilver_oak_wood_stairs": "SIlverOakWood Stairs",
       "block.testmod.onion_stage_2": "Onion Stage 2",
       "block.testmod.onion_stage_3": "Onion Stage 3",
       "block.testmod.onion_stage_4": "Onion Stage 4",
@@ -1383,6 +1571,7 @@
       "item.variaty_additions.small_backpack": "Small Backpack",
       "item.testmod.kebabas": "Burrito",
       "block.testmod.onion_stage_0": "Onion Stage 0",
+      "block.variaty_additions.s_ilver_oak_wood_slab": "SIlverOakWood Slab",
       "block.testmod.onion_stage_1": "Onion Stage 1",
       "item.variaty_additions.silver_chicken_spawn_egg": "Silver Chicken Spawn Egg",
       "block.variaty_additions.silver_oak_leaves": "Silver Oak Leaves",
@@ -1415,6 +1604,7 @@
       "block.testmod.silver_oak_log": "Silver Oak Log",
       "block.testmod.silver_oak_sapling": "Silver Oak Sapling",
       "block.testmod.silver_oak_planks": "Silver Oak Planks",
+      "block.variaty_additions.s_ilver_oak_wood_pressure_plate": "SIlverOakWood Pressure Plate",
       "item.testmod.iron_sickle": "Iron Sickle",
       "block.variaty_additions.silver_oak_sapling": "Silver Oak Sapling",
       "item.testmod.meatballs": "Meatballs"
@@ -1431,7 +1621,12 @@
             "children": [
               {
                 "name": "mobs",
-                "children": []
+                "children": [
+                  {
+                    "name": "silver chicken",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Silver pog",
@@ -1471,6 +1666,10 @@
           },
           {
             "name": "backpacks",
+            "children": []
+          },
+          {
+            "name": "structures",
             "children": []
           }
         ]
